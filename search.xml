@@ -10,4 +10,222 @@
 href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a> </p>
 ]]></content>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2021/10/14/%E9%93%BE%E8%B7%AF%E5%B1%82/</url>
+    <content><![CDATA[<h1 id="链路层"><a href="#链路层" class="headerlink" title="链路层"></a>链路层</h1><h2 id="术语-名词"><a href="#术语-名词" class="headerlink" title="术语(名词)"></a>术语(名词)</h2><h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><h3 id="链路"><a href="#链路" class="headerlink" title="链路"></a>链路</h3><h3 id="链路帧"><a href="#链路帧" class="headerlink" title="链路帧"></a>链路帧</h3><h3 id="网络适配器-网络接口卡"><a href="#网络适配器-网络接口卡" class="headerlink" title="网络适配器/网络接口卡"></a>网络适配器/网络接口卡</h3><h3 id="媒体访问控制协议-MAC"><a href="#媒体访问控制协议-MAC" class="headerlink" title="媒体访问控制协议(MAC)"></a>媒体访问控制协议(MAC)</h3><h3 id="链路层信道"><a href="#链路层信道" class="headerlink" title="链路层信道"></a>链路层信道</h3><ul>
+<li>点对点链路</li>
+<li>广播链路</li>
+</ul>
+<h2 id="链路层提供的服务"><a href="#链路层提供的服务" class="headerlink" title="链路层提供的服务"></a>链路层提供的服务</h2><h3 id="成帧-framing"><a href="#成帧-framing" class="headerlink" title="成帧(framing)"></a>成帧(framing)</h3><h3 id="链路接入-媒体访问控制协议-MAC"><a href="#链路接入-媒体访问控制协议-MAC" class="headerlink" title="链路接入[媒体访问控制协议(MAC)]"></a>链路接入[媒体访问控制协议(MAC)]</h3><h3 id="可靠交付"><a href="#可靠交付" class="headerlink" title="可靠交付"></a>可靠交付</h3><h3 id="差错检测和纠正"><a href="#差错检测和纠正" class="headerlink" title="差错检测和纠正"></a>差错检测和纠正</h3><h2 id="链路层在何处实现"><a href="#链路层在何处实现" class="headerlink" title="链路层在何处实现"></a>链路层在何处实现</h2><h2 id="差错检测和纠正技术"><a href="#差错检测和纠正技术" class="headerlink" title="差错检测和纠正技术"></a>差错检测和纠正技术</h2><h3 id="奇偶校验"><a href="#奇偶校验" class="headerlink" title="奇偶校验"></a>奇偶校验</h3><h3 id="检验和方法"><a href="#检验和方法" class="headerlink" title="检验和方法"></a>检验和方法</h3><h3 id="循环冗余检测-CRC"><a href="#循环冗余检测-CRC" class="headerlink" title="循环冗余检测(CRC)"></a>循环冗余检测(CRC)</h3>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/10/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E9%93%BE%E8%B7%AF%E5%B1%82%E5%92%8C%E5%B1%80%E5%9F%9F%E7%BD%91/</url>
+    <content><![CDATA[<h1 id="链路层"><a href="#链路层" class="headerlink" title="链路层"></a>链路层</h1><h2 id="术语-名词"><a href="#术语-名词" class="headerlink" title="术语(名词)"></a>术语(名词)</h2><h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><h3 id="链路"><a href="#链路" class="headerlink" title="链路"></a>链路</h3><h3 id="链路帧"><a href="#链路帧" class="headerlink" title="链路帧"></a>链路帧</h3><h3 id="网络适配器-网络接口卡"><a href="#网络适配器-网络接口卡" class="headerlink" title="网络适配器/网络接口卡"></a>网络适配器/网络接口卡</h3><h3 id="媒体访问控制协议-MAC"><a href="#媒体访问控制协议-MAC" class="headerlink" title="媒体访问控制协议(MAC)"></a>媒体访问控制协议(MAC)</h3><h3 id="载波侦听-carrier-sensing"><a href="#载波侦听-carrier-sensing" class="headerlink" title="载波侦听(carrier sensing)"></a>载波侦听(carrier sensing)</h3><h3 id="碰撞检测-collision-detection"><a href="#碰撞检测-collision-detection" class="headerlink" title="碰撞检测(collision detection)"></a>碰撞检测(collision detection)</h3><h3 id="二进制指数后退算法"><a href="#二进制指数后退算法" class="headerlink" title="二进制指数后退算法"></a>二进制指数后退算法</h3><h3 id="轮询"><a href="#轮询" class="headerlink" title="轮询"></a>轮询</h3><h3 id="令牌"><a href="#令牌" class="headerlink" title="令牌"></a>令牌</h3><h3 id="ARP分组"><a href="#ARP分组" class="headerlink" title="ARP分组"></a>ARP分组</h3><h3 id="ARP表"><a href="#ARP表" class="headerlink" title="ARP表"></a>ARP表</h3><h3 id="以太网的总线拓扑"><a href="#以太网的总线拓扑" class="headerlink" title="以太网的总线拓扑"></a>以太网的总线拓扑</h3><h3 id="集线器"><a href="#集线器" class="headerlink" title="集线器"></a>集线器</h3><h3 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h3><h3 id="转发器"><a href="#转发器" class="headerlink" title="转发器"></a>转发器</h3><h3 id="流量工程"><a href="#流量工程" class="headerlink" title="流量工程"></a>流量工程</h3><h2 id="6-1链路层概述"><a href="#6-1链路层概述" class="headerlink" title="6.1链路层概述"></a>6.1链路层概述</h2><h3 id="6-1-1链路层提供的服务"><a href="#6-1-1链路层提供的服务" class="headerlink" title="6.1.1链路层提供的服务"></a>6.1.1链路层提供的服务</h3><ul>
+<li>成帧(framing)</li>
+<li>链路接入[媒体访问控制协议(MAC)]</li>
+<li>可靠交付</li>
+<li>差错检测和纠正</li>
+</ul>
+<h3 id="6-1-2链路层在何处实现"><a href="#6-1-2链路层在何处实现" class="headerlink" title="6.1.2链路层在何处实现"></a>6.1.2链路层在何处实现</h3><h2 id="6-2差错检测和纠正技术"><a href="#6-2差错检测和纠正技术" class="headerlink" title="6.2差错检测和纠正技术"></a>6.2差错检测和纠正技术</h2><h3 id="6-2-1奇偶校验"><a href="#6-2-1奇偶校验" class="headerlink" title="6.2.1奇偶校验"></a>6.2.1奇偶校验</h3><h3 id="6-2-2检验和方法"><a href="#6-2-2检验和方法" class="headerlink" title="6.2.2检验和方法"></a>6.2.2检验和方法</h3><h3 id="6-2-3循环冗余检测-CRC"><a href="#6-2-3循环冗余检测-CRC" class="headerlink" title="6.2.3循环冗余检测(CRC)"></a>6.2.3循环冗余检测(CRC)</h3><h2 id="6-3链路层信道"><a href="#6-3链路层信道" class="headerlink" title="6.3链路层信道"></a>6.3链路层信道</h2><h3 id="6-3-1点对点链路"><a href="#6-3-1点对点链路" class="headerlink" title="6.3.1点对点链路"></a>6.3.1点对点链路</h3><ul>
+<li>点对点协议(ppp)</li>
+<li>高级数据链路控制(HDLC)</li>
+</ul>
+<h3 id="6-3-2广播链路"><a href="#6-3-2广播链路" class="headerlink" title="6.3.2广播链路"></a>6.3.2广播链路</h3><ul>
+<li><p>多路访问协议</p>
+<ul>
+<li><p>信道划分协议</p>
+<ul>
+<li>时分多路复用(TDM)</li>
+<li>频分多路复用(FDM)</li>
+<li>码分多址(CDMA)</li>
+</ul>
+</li>
+<li><p>随机接入协议</p>
+<ul>
+<li>时隙ALOHA</li>
+<li>ALOHA</li>
+<li>载波侦听多路访问(CSMA)</li>
+<li>具有碰撞检测的载波侦听多路访问(CSMA/CD)</li>
+</ul>
+</li>
+<li><p>轮流协议</p>
+<ul>
+<li>轮询式协议</li>
+<li>令牌传递协议</li>
+</ul>
+</li>
+<li><p>DOCSIS(用于电缆因特网接入的链路层协议)</p>
+<ul>
+<li>采用了上面三大类协议(FDM、TDM、随机接入和集中分配时隙都用于一个网络中)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-4交换局域网"><a href="#6-4交换局域网" class="headerlink" title="6.4交换局域网"></a>6.4交换局域网</h2><h3 id="链路层寻址和ARP"><a href="#链路层寻址和ARP" class="headerlink" title="链路层寻址和ARP"></a>链路层寻址和ARP</h3><ul>
+<li><p>MAC地址(LAN地址/物理地址)</p>
+<ul>
+<li>MAC广播地址(FF-FF-FF-FF-FF-FF)</li>
+</ul>
+</li>
+<li><p>地址解析协议(ARP)</p>
+<p>地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。</p>
+<ul>
+<li>ARP可以看成跨越链路层和网络层边界两边的协议</li>
+<li>ARP只为在同一子网上的主机和路由器接口解析IP地址</li>
+</ul>
+</li>
+<li><p>发送数据到子网之外</p>
+<ul>
+<li>目的地址应该是通往最终目的路径上的第一跳路由器接口的适配器地址，而不是子网之外目的主机的MAC地址</li>
+</ul>
+</li>
+<li><p>以太网</p>
+<p>以太网是局域网的一种实现方式，是一种计算机局域网技术</p>
+<ul>
+<li><p>以太网帧结构</p>
+<ul>
+<li>数据字段(45~1500字节)</li>
+<li>目的地址(6字节)</li>
+<li>源地址(6字节)</li>
+<li>类型字段(2字节)</li>
+<li>CRC(4字节)</li>
+<li>前同步码(8字节)</li>
+</ul>
+</li>
+<li><p>向网络层提供无连接服务、不可靠服务</p>
+</li>
+<li><p>以太网技术</p>
+</li>
+<li><p>链路层交换机</p>
+<ul>
+<li><p>交换机自身对子网的主机和路由器是透明的</p>
+</li>
+<li><p>交换机转发和过滤(借助于交换机表)</p>
+</li>
+<li><p>自学习</p>
+</li>
+<li><p>链路层交换机的性质</p>
+<ul>
+<li>消除碰撞</li>
+<li>异质的链路</li>
+<li>管理</li>
+</ul>
+</li>
+<li><p>交换机和路由器比较</p>
+<ul>
+<li><p>交换机</p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li><p>即插即用</p>
+</li>
+<li><p>具有相对高的分组过滤和转发速率</p>
+<p>因为交换机必须处理高至第二层的帧，而路由器则是高至第三层的数据报</p>
+</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li><p>交换网络的活跃拓扑限制为一棵生成树</p>
+<p>为了防止广播帧的循环</p>
+</li>
+<li><p>大型交换网络要求在主机和路由器中有大的ARP表，这将生成可观的ARP流量和处理量</p>
+</li>
+<li><p>交换机对于广播风暴不提供任何保护措施</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>路由器</p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li>当网络中存在冗余路径时，分组通常也不会通过路由器循环，因此允许以丰富的拓扑结构构建因特网(因为分组不会被限制在一颗生成树上)</li>
+<li>对第二层的广播风暴提供防火墙保护</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>不是即插即用</li>
+<li>处理速度相对交换机慢</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>虚拟局域网(VLAN)</p>
+<p>支持VLAN的交换机允许经一个单一的物理局域网基础设施定义多个虚拟局域网</p>
+<ul>
+<li><p>互联VLAN交换机的一种方法——VLAN干线连接</p>
+<ul>
+<li>一种扩展的以太网帧格式——802.1Q，用于跨越VLAN干线的帧(通过在标准格式中加进首部4字节VLAN标签)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-5链路虚拟化：网络作为链路层"><a href="#6-5链路虚拟化：网络作为链路层" class="headerlink" title="6.5链路虚拟化：网络作为链路层"></a>6.5链路虚拟化：网络作为链路层</h2><h3 id="多协议标签交换网络-MPLS"><a href="#多协议标签交换网络-MPLS" class="headerlink" title="多协议标签交换网络(MPLS)"></a>多协议标签交换网络(MPLS)</h3><p>由MPLS使能的路由器称为标签交换路由器<br>MPLS基于固定长度标签转发IP数据报，而不是目的IP地址</p>
+<ul>
+<li>由MPLS使能的路由器处理的链路层帧格式</li>
+<li>流量工程</li>
+<li>可以用来实现虚拟网络(VPN)</li>
+</ul>
+<h2 id="6-6数据中心网络"><a href="#6-6数据中心网络" class="headerlink" title="6.6数据中心网络"></a>6.6数据中心网络</h2><h3 id="6-6-1名词"><a href="#6-6-1名词" class="headerlink" title="6.6.1名词"></a>6.6.1名词</h3><ul>
+<li>机架顶部交换机</li>
+<li>边界路由器</li>
+<li>刀片</li>
+</ul>
+<h3 id="6-6-2数据中心网络设计"><a href="#6-6-2数据中心网络设计" class="headerlink" title="6.6.2数据中心网络设计"></a>6.6.2数据中心网络设计</h3><ul>
+<li><p>负载均衡</p>
+</li>
+<li><p>等级体系结构</p>
+</li>
+<li><p>数据中信网络的发展趋势</p>
+<ul>
+<li>全连接拓扑</li>
+<li>模块化数据中心</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-7回顾Web页面请求的历程"><a href="#6-7回顾Web页面请求的历程" class="headerlink" title="6.7回顾Web页面请求的历程"></a>6.7回顾Web页面请求的历程</h2><h3 id="1-准备：DHCP、UDP、IP和以太网"><a href="#1-准备：DHCP、UDP、IP和以太网" class="headerlink" title="1.准备：DHCP、UDP、IP和以太网"></a>1.准备：DHCP、UDP、IP和以太网</h3><ul>
+<li>DHCP请求报文</li>
+<li>UDP报文</li>
+<li>IP数据报</li>
+<li>以太网帧</li>
+<li>CIDR</li>
+<li>DHCP ACK报文</li>
+<li>IP转发表</li>
+</ul>
+<h3 id="2-仍在准备：DNS和APR"><a href="#2-仍在准备：DNS和APR" class="headerlink" title="2.仍在准备：DNS和APR"></a>2.仍在准备：DNS和APR</h3><ul>
+<li>DNS协议</li>
+<li>DNS查询报文</li>
+<li>APR协议</li>
+<li>APR查询报文</li>
+<li>APR回答</li>
+</ul>
+<h3 id="3-仍在准备：域内路由选择到DNS服务器"><a href="#3-仍在准备：域内路由选择到DNS服务器" class="headerlink" title="3.仍在准备：域内路由选择到DNS服务器"></a>3.仍在准备：域内路由选择到DNS服务器</h3><ul>
+<li>因特网的域间协议BGP</li>
+<li>DNS源记录</li>
+<li>权威DNS服务器</li>
+<li>DNS回答报文</li>
+</ul>
+<h3 id="4-Web客户-服务器交互：TCP和HTTP"><a href="#4-Web客户-服务器交互：TCP和HTTP" class="headerlink" title="4.Web客户-服务器交互：TCP和HTTP"></a>4.Web客户-服务器交互：TCP和HTTP</h3><ul>
+<li>TCP套接字</li>
+<li>HTTP GET报文</li>
+<li>三次握手</li>
+<li>TCP SYN报文段</li>
+<li>BGP协议</li>
+<li>HTTP响应报文</li>
+</ul>
+<h2 id="6-8小结"><a href="#6-8小结" class="headerlink" title="6.8小结"></a>6.8小结</h2><h2 id="没看懂"><a href="#没看懂" class="headerlink" title="没看懂"></a>没看懂</h2>]]></content>
+  </entry>
 </search>

@@ -8,6 +8,7 @@
   
   
   <title>
+    计算机网络第六章 链路层和局域网 |
     
     Wishstrive
   </title>
@@ -36,11 +37,22 @@
 
   <div class="article-inner">
     
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  计算机网络第六章 链路层和局域网
+</h1>
+
+
+
+    </header>
+    
 
     
     <div class="article-meta">
       <a href="/2021/10/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E9%93%BE%E8%B7%AF%E5%B1%82%E5%92%8C%E5%B1%80%E5%9F%9F%E7%BD%91/" class="article-date">
-  <time datetime="2021-10-17T06:15:51.364Z" itemprop="datePublished">2021-10-17</time>
+  <time datetime="2021-10-17T06:44:49.000Z" itemprop="datePublished">2021-10-17</time>
 </a>
       
     </div>
@@ -56,7 +68,9 @@
       
       
       
-      <h1 id="链路层"><a href="#链路层" class="headerlink" title="链路层"></a>链路层</h1><h2 id="术语-名词"><a href="#术语-名词" class="headerlink" title="术语(名词)"></a>术语(名词)</h2><h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><h3 id="链路"><a href="#链路" class="headerlink" title="链路"></a>链路</h3><h3 id="链路帧"><a href="#链路帧" class="headerlink" title="链路帧"></a>链路帧</h3><h3 id="网络适配器-网络接口卡"><a href="#网络适配器-网络接口卡" class="headerlink" title="网络适配器/网络接口卡"></a>网络适配器/网络接口卡</h3><h3 id="媒体访问控制协议-MAC"><a href="#媒体访问控制协议-MAC" class="headerlink" title="媒体访问控制协议(MAC)"></a>媒体访问控制协议(MAC)</h3><h3 id="载波侦听-carrier-sensing"><a href="#载波侦听-carrier-sensing" class="headerlink" title="载波侦听(carrier sensing)"></a>载波侦听(carrier sensing)</h3><h3 id="碰撞检测-collision-detection"><a href="#碰撞检测-collision-detection" class="headerlink" title="碰撞检测(collision detection)"></a>碰撞检测(collision detection)</h3><h3 id="二进制指数后退算法"><a href="#二进制指数后退算法" class="headerlink" title="二进制指数后退算法"></a>二进制指数后退算法</h3><h3 id="轮询"><a href="#轮询" class="headerlink" title="轮询"></a>轮询</h3><h3 id="令牌"><a href="#令牌" class="headerlink" title="令牌"></a>令牌</h3><h3 id="ARP分组"><a href="#ARP分组" class="headerlink" title="ARP分组"></a>ARP分组</h3><h3 id="ARP表"><a href="#ARP表" class="headerlink" title="ARP表"></a>ARP表</h3><h3 id="以太网的总线拓扑"><a href="#以太网的总线拓扑" class="headerlink" title="以太网的总线拓扑"></a>以太网的总线拓扑</h3><h3 id="集线器"><a href="#集线器" class="headerlink" title="集线器"></a>集线器</h3><h3 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h3><h3 id="转发器"><a href="#转发器" class="headerlink" title="转发器"></a>转发器</h3><h3 id="流量工程"><a href="#流量工程" class="headerlink" title="流量工程"></a>流量工程</h3><h2 id="6-1链路层概述"><a href="#6-1链路层概述" class="headerlink" title="6.1链路层概述"></a>6.1链路层概述</h2><h3 id="6-1-1链路层提供的服务"><a href="#6-1-1链路层提供的服务" class="headerlink" title="6.1.1链路层提供的服务"></a>6.1.1链路层提供的服务</h3><ul>
+      <h1 id="链路层"><a href="#链路层" class="headerlink" title="链路层"></a>链路层</h1><span id="more"></span>
+
+<h2 id="术语-名词"><a href="#术语-名词" class="headerlink" title="术语(名词)"></a>术语(名词)</h2><h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><h3 id="链路"><a href="#链路" class="headerlink" title="链路"></a>链路</h3><h3 id="链路帧"><a href="#链路帧" class="headerlink" title="链路帧"></a>链路帧</h3><h3 id="网络适配器-网络接口卡"><a href="#网络适配器-网络接口卡" class="headerlink" title="网络适配器/网络接口卡"></a>网络适配器/网络接口卡</h3><h3 id="媒体访问控制协议-MAC"><a href="#媒体访问控制协议-MAC" class="headerlink" title="媒体访问控制协议(MAC)"></a>媒体访问控制协议(MAC)</h3><h3 id="载波侦听-carrier-sensing"><a href="#载波侦听-carrier-sensing" class="headerlink" title="载波侦听(carrier sensing)"></a>载波侦听(carrier sensing)</h3><h3 id="碰撞检测-collision-detection"><a href="#碰撞检测-collision-detection" class="headerlink" title="碰撞检测(collision detection)"></a>碰撞检测(collision detection)</h3><h3 id="二进制指数后退算法"><a href="#二进制指数后退算法" class="headerlink" title="二进制指数后退算法"></a>二进制指数后退算法</h3><h3 id="轮询"><a href="#轮询" class="headerlink" title="轮询"></a>轮询</h3><h3 id="令牌"><a href="#令牌" class="headerlink" title="令牌"></a>令牌</h3><h3 id="ARP分组"><a href="#ARP分组" class="headerlink" title="ARP分组"></a>ARP分组</h3><h3 id="ARP表"><a href="#ARP表" class="headerlink" title="ARP表"></a>ARP表</h3><h3 id="以太网的总线拓扑"><a href="#以太网的总线拓扑" class="headerlink" title="以太网的总线拓扑"></a>以太网的总线拓扑</h3><h3 id="集线器"><a href="#集线器" class="headerlink" title="集线器"></a>集线器</h3><h3 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h3><h3 id="转发器"><a href="#转发器" class="headerlink" title="转发器"></a>转发器</h3><h3 id="流量工程"><a href="#流量工程" class="headerlink" title="流量工程"></a>流量工程</h3><h2 id="6-1链路层概述"><a href="#6-1链路层概述" class="headerlink" title="6.1链路层概述"></a>6.1链路层概述</h2><h3 id="6-1-1链路层提供的服务"><a href="#6-1-1链路层提供的服务" class="headerlink" title="6.1.1链路层提供的服务"></a>6.1.1链路层提供的服务</h3><ul>
 <li>成帧(framing)</li>
 <li>链路接入[媒体访问控制协议(MAC)]</li>
 <li>可靠交付</li>
@@ -260,7 +274,7 @@
 <li>BGP协议</li>
 <li>HTTP响应报文</li>
 </ul>
-<h2 id="6-8小结"><a href="#6-8小结" class="headerlink" title="6.8小结"></a>6.8小结</h2><h2 id="没看懂"><a href="#没看懂" class="headerlink" title="没看懂"></a>没看懂</h2>
+<h2 id="6-8小结"><a href="#6-8小结" class="headerlink" title="6.8小结"></a>6.8小结</h2>
       
     </div>
     <footer class="article-footer">

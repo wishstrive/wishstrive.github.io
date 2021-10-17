@@ -70,7 +70,9 @@
       
       <h1 id="链路层"><a href="#链路层" class="headerlink" title="链路层"></a>链路层</h1><span id="more"></span>
 
-<h2 id="术语-名词"><a href="#术语-名词" class="headerlink" title="术语(名词)"></a>术语(名词)</h2><h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><h3 id="链路"><a href="#链路" class="headerlink" title="链路"></a>链路</h3><h3 id="链路帧"><a href="#链路帧" class="headerlink" title="链路帧"></a>链路帧</h3><h3 id="网络适配器-网络接口卡"><a href="#网络适配器-网络接口卡" class="headerlink" title="网络适配器/网络接口卡"></a>网络适配器/网络接口卡</h3><h3 id="媒体访问控制协议-MAC"><a href="#媒体访问控制协议-MAC" class="headerlink" title="媒体访问控制协议(MAC)"></a>媒体访问控制协议(MAC)</h3><h3 id="载波侦听-carrier-sensing"><a href="#载波侦听-carrier-sensing" class="headerlink" title="载波侦听(carrier sensing)"></a>载波侦听(carrier sensing)</h3><h3 id="碰撞检测-collision-detection"><a href="#碰撞检测-collision-detection" class="headerlink" title="碰撞检测(collision detection)"></a>碰撞检测(collision detection)</h3><h3 id="二进制指数后退算法"><a href="#二进制指数后退算法" class="headerlink" title="二进制指数后退算法"></a>二进制指数后退算法</h3><h3 id="轮询"><a href="#轮询" class="headerlink" title="轮询"></a>轮询</h3><h3 id="令牌"><a href="#令牌" class="headerlink" title="令牌"></a>令牌</h3><h3 id="ARP分组"><a href="#ARP分组" class="headerlink" title="ARP分组"></a>ARP分组</h3><h3 id="ARP表"><a href="#ARP表" class="headerlink" title="ARP表"></a>ARP表</h3><h3 id="以太网的总线拓扑"><a href="#以太网的总线拓扑" class="headerlink" title="以太网的总线拓扑"></a>以太网的总线拓扑</h3><h3 id="集线器"><a href="#集线器" class="headerlink" title="集线器"></a>集线器</h3><h3 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h3><h3 id="转发器"><a href="#转发器" class="headerlink" title="转发器"></a>转发器</h3><h3 id="流量工程"><a href="#流量工程" class="headerlink" title="流量工程"></a>流量工程</h3><h2 id="6-1链路层概述"><a href="#6-1链路层概述" class="headerlink" title="6.1链路层概述"></a>6.1链路层概述</h2><h3 id="6-1-1链路层提供的服务"><a href="#6-1-1链路层提供的服务" class="headerlink" title="6.1.1链路层提供的服务"></a>6.1.1链路层提供的服务</h3><ul>
+<hr>
+<h2 id="术语-名词"><a href="#术语-名词" class="headerlink" title="术语(名词)"></a>术语(名词)</h2><h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><h3 id="链路"><a href="#链路" class="headerlink" title="链路"></a>链路</h3><h3 id="链路帧"><a href="#链路帧" class="headerlink" title="链路帧"></a>链路帧</h3><h3 id="网络适配器-网络接口卡"><a href="#网络适配器-网络接口卡" class="headerlink" title="网络适配器/网络接口卡"></a>网络适配器/网络接口卡</h3><h3 id="媒体访问控制协议-MAC"><a href="#媒体访问控制协议-MAC" class="headerlink" title="媒体访问控制协议(MAC)"></a>媒体访问控制协议(MAC)</h3><h3 id="载波侦听-carrier-sensing"><a href="#载波侦听-carrier-sensing" class="headerlink" title="载波侦听(carrier sensing)"></a>载波侦听(carrier sensing)</h3><h3 id="碰撞检测-collision-detection"><a href="#碰撞检测-collision-detection" class="headerlink" title="碰撞检测(collision detection)"></a>碰撞检测(collision detection)</h3><h3 id="二进制指数后退算法"><a href="#二进制指数后退算法" class="headerlink" title="二进制指数后退算法"></a>二进制指数后退算法</h3><h3 id="轮询"><a href="#轮询" class="headerlink" title="轮询"></a>轮询</h3><h3 id="令牌"><a href="#令牌" class="headerlink" title="令牌"></a>令牌</h3><h3 id="ARP分组"><a href="#ARP分组" class="headerlink" title="ARP分组"></a>ARP分组</h3><h3 id="ARP表"><a href="#ARP表" class="headerlink" title="ARP表"></a>ARP表</h3><h3 id="以太网的总线拓扑"><a href="#以太网的总线拓扑" class="headerlink" title="以太网的总线拓扑"></a>以太网的总线拓扑</h3><h3 id="集线器"><a href="#集线器" class="headerlink" title="集线器"></a>集线器</h3><h3 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h3><h3 id="转发器"><a href="#转发器" class="headerlink" title="转发器"></a>转发器</h3><h3 id="流量工程"><a href="#流量工程" class="headerlink" title="流量工程"></a>流量工程</h3><hr>
+<h2 id="6-1链路层概述"><a href="#6-1链路层概述" class="headerlink" title="6.1链路层概述"></a>6.1链路层概述</h2><h3 id="6-1-1链路层提供的服务"><a href="#6-1-1链路层提供的服务" class="headerlink" title="6.1.1链路层提供的服务"></a>6.1.1链路层提供的服务</h3><ul>
 <li>成帧(framing)</li>
 <li>链路接入[媒体访问控制协议(MAC)]</li>
 <li>可靠交付</li>
@@ -223,9 +225,12 @@
 </ul>
 <h2 id="6-5链路虚拟化：网络作为链路层"><a href="#6-5链路虚拟化：网络作为链路层" class="headerlink" title="6.5链路虚拟化：网络作为链路层"></a>6.5链路虚拟化：网络作为链路层</h2><h3 id="多协议标签交换网络-MPLS"><a href="#多协议标签交换网络-MPLS" class="headerlink" title="多协议标签交换网络(MPLS)"></a>多协议标签交换网络(MPLS)</h3><p>由MPLS使能的路由器称为标签交换路由器<br>MPLS基于固定长度标签转发IP数据报，而不是目的IP地址</p>
 <ul>
-<li>由MPLS使能的路由器处理的链路层帧格式</li>
-<li>流量工程</li>
-<li>可以用来实现虚拟网络(VPN)</li>
+<li><p>由MPLS使能的路由器处理的链路层帧格式</p>
+</li>
+<li><p>流量工程</p>
+</li>
+<li><p>可以用来实现虚拟网络(VPN)</p>
+</li>
 </ul>
 <h2 id="6-6数据中心网络"><a href="#6-6数据中心网络" class="headerlink" title="6.6数据中心网络"></a>6.6数据中心网络</h2><h3 id="6-6-1名词"><a href="#6-6-1名词" class="headerlink" title="6.6.1名词"></a>6.6.1名词</h3><ul>
 <li>机架顶部交换机</li>
@@ -267,12 +272,18 @@
 <li>DNS回答报文</li>
 </ul>
 <h3 id="4-Web客户-服务器交互：TCP和HTTP"><a href="#4-Web客户-服务器交互：TCP和HTTP" class="headerlink" title="4.Web客户-服务器交互：TCP和HTTP"></a>4.Web客户-服务器交互：TCP和HTTP</h3><ul>
-<li>TCP套接字</li>
-<li>HTTP GET报文</li>
-<li>三次握手</li>
-<li>TCP SYN报文段</li>
-<li>BGP协议</li>
-<li>HTTP响应报文</li>
+<li><p>TCP套接字</p>
+</li>
+<li><p>HTTP GET报文</p>
+</li>
+<li><p>三次握手</p>
+</li>
+<li><p>TCP SYN报文段</p>
+</li>
+<li><p>BGP协议</p>
+</li>
+<li><p>HTTP响应报文</p>
+</li>
 </ul>
 <h2 id="6-8小结"><a href="#6-8小结" class="headerlink" title="6.8小结"></a>6.8小结</h2>
       
@@ -291,9 +302,9 @@
 <nav class="article-nav">
   
   
-  <a href="/2021/10/14/%E9%93%BE%E8%B7%AF%E5%B1%82/" class="article-nav-link">
+  <a href="/2021/10/12/markdown%E8%AF%AD%E6%B3%95/" class="article-nav-link">
     <strong class="article-nav-caption">Older</strong>
-    <div class="article-nav-title"></div>
+    <div class="article-nav-title">markdown语法</div>
   </a>
   
 </nav>

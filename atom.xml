@@ -36,10 +36,11 @@
     <link href="https://wishstrive.github.io/2021/10/17/%E5%89%8D%E7%AB%AF/"/>
     <id>https://wishstrive.github.io/2021/10/17/%E5%89%8D%E7%AB%AF/</id>
     <published>2021-10-17T06:44:49.000Z</published>
-    <updated>2021-10-20T14:55:01.263Z</updated>
+    <updated>2021-10-20T14:56:50.201Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;前端&quot;&gt;&lt;a href=&quot;#前端&quot; class=&quot;headerlink&quot; title=&quot;前端&quot;&gt;&lt;/a&gt;前端&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;结构&lt;/strong&gt;：HTML用于描述页面的结构&lt;/p&gt;
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;结构&lt;/strong&gt;：HTML用于描述页面的结构&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;表现&lt;/strong&gt;：CSS用于控制页面中的元素样式&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;行为&lt;/strong&gt;：JavaScript用于相应用户操作&lt;/p&gt;</summary>
     

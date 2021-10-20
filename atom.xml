@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Wishstrive</title>
   
-  
+  <subtitle>今天你进步了吗</subtitle>
   <link href="https://wishstrive.github.io/atom.xml" rel="self"/>
   
   <link href="https://wishstrive.github.io/"/>

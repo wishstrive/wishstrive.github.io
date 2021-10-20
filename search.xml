@@ -5,9 +5,43 @@
     <url>/2021/10/12/markdown%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h6 id="无摘要"><a href="#无摘要" class="headerlink" title="无摘要"></a>无摘要</h6><span id="more"></span>
 
-<h1 id="标题（-后米接一个空格）"><a href="#标题（-后米接一个空格）" class="headerlink" title="标题（#后米接一个空格）"></a>标题（#后米接一个空格）</h1><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p>1.斜体（左右用*括起来） 效果：<em>斜体</em><br>2.加粗（左右用两个*括起来）效果：<strong>加粗</strong><br><del>3.斜体加粗（左右用三个*括起来）效果：<em><strong>斜体加粗</strong></em></del>（斜体加粗好像不行？）<br>4.删除线（左右用两个~括起来）效果：<del>删除线</del></p>
-<h1 id="额，剩下的懒得打了，需要用再来这里找吧"><a href="#额，剩下的懒得打了，需要用再来这里找吧" class="headerlink" title="额，剩下的懒得打了，需要用再来这里找吧"></a>额，剩下的懒得打了，需要用再来这里找吧</h1><p> <a
-href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a> </p>
+<h2 id="1-标题（-后米接一个空格）"><a href="#1-标题（-后米接一个空格）" class="headerlink" title="1.标题（#后米接一个空格）"></a>1.标题（#后米接一个空格）</h2><ul>
+<li><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1></li>
+<li><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></li>
+<li><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3></li>
+<li><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4></li>
+<li><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5></li>
+<li><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
+</ul>
+<hr>
+<h2 id="2-字体格式"><a href="#2-字体格式" class="headerlink" title="2.字体格式"></a>2.字体格式</h2><ul>
+<li>斜体（左右用*括起来） 效果：<em>斜体</em></li>
+<li>加粗（左右用两个*括起来）效果：<strong>加粗</strong></li>
+<li>斜体加粗（左右用三个*括起来）效果：<em><strong>斜体加粗</strong></em></li>
+<li>删除线（左右用两个~括起来）效果：<del>删除线</del></li>
+</ul>
+<hr>
+<h3 id="3-图片"><a href="#3-图片" class="headerlink" title="3.图片"></a>3.图片</h3><ul>
+<li><p>语法：</p>
+<p><code>![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;)</code></p>
+</li>
+<li><p>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
+<p>如果要将笔记发布到网络，图片地址需要提供外链，本地连接不行</p>
+</li>
+<li><p>一篇关于外链图床选择的文章<a href="https://www.jianshu.com/p/ea1eb11db63f">markdown图床 - 简书 (jianshu.com)</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="4-超链接"><a href="#4-超链接" class="headerlink" title="4.超链接"></a>4.超链接</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">超链接名</span>](<span class="link">超链接地址 &quot;超链接title&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+<li><p>title和上面图片的作用一样，可加可不加</p>
+</li>
+</ul>
+<hr>
+<p><strong>其余见下方链接(<em>懒得打了</em>)</strong></p>
+<p> <strong><a
+href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></strong> </p>
 ]]></content>
   </entry>
   <entry>
@@ -264,11 +298,13 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a> </p>
     <title></title>
     <url>/2021/10/20/%E5%89%8D%E7%AB%AF/</url>
     <content><![CDATA[<hr>
-<p>title:前端<br>date:2021-10-17 14:44:49</p>
+<p>title：前端<br>date：2021-10-17 14:44:49</p>
 <hr>
 <h1 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h1><p><strong>结构</strong>：HTML用于描述页面的结构</p>
 <p><strong>表现</strong>：CSS用于控制页面中的元素样式</p>
 <p><strong>行为</strong>：JavaScript用于相应用户操作</p>
+<!-- read more -->
+
 <hr>
 <h2 id="html5"><a href="#html5" class="headerlink" title="html5"></a>html5</h2><h3 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h3><hr>
 <h4 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML?"></a>什么是HTML?</h4><p><em><strong>HTML 是用来描述网页的一种语言</strong></em>。</p>
@@ -301,7 +337,7 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a> </p>
 </li>
 </ul>
 <ul>
-<li><p><img src="C:\Users\10497\AppData\Roaming\Typora\typora-user-images\image-20211020201645900.png" alt="image-20211020201645900"></p>
+<li><p><img src="https://z3.ax1x.com/2021/10/20/5DzUmt.md.png" alt="一个简单的html文件"></p>
 <blockquote>
 <ul>
 <li><strong><!DOCTYPE html></strong> 声明为 HTML5 文档</li>

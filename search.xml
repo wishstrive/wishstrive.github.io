@@ -358,7 +358,14 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></stron
 <hr>
 <h4 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h4><ul>
 <li><h5 id="HTML标题"><a href="#HTML标题" class="headerlink" title="HTML标题"></a>HTML标题</h5><p>HTML 标题（Heading）是通过<code>&lt;h1&gt; - &lt;h6&gt;</code> 标签来定义的。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>这是一个标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>这是一个标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>这是一个标题<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<ul>
+<li><h1 id="lt-h1-gt-这是一个标题-lt-h1-gt"><a href="#lt-h1-gt-这是一个标题-lt-h1-gt" class="headerlink" title="&lt;h1&gt;这是一个标题&lt;/h1&gt;"></a><code>&lt;h1&gt;</code>这是一个标题<code>&lt;/h1&gt;</code></h1></li>
+<li><h2 id="lt-h2-gt-这是一个标题-lt-h2-gt"><a href="#lt-h2-gt-这是一个标题-lt-h2-gt" class="headerlink" title="&lt;h2&gt;这是一个标题&lt;/h2&gt;"></a><code>&lt;h2&gt;</code>这是一个标题<code>&lt;/h2&gt;</code></h2></li>
+<li><h3 id="lt-h3-gt-这是一个标题-lt-h3"><a href="#lt-h3-gt-这是一个标题-lt-h3" class="headerlink" title="&lt;h3&gt;这是一个标题&lt;/h3"></a><code>&lt;h3&gt;</code>这是一个标题<code>&lt;/h3</code></h3></li>
+</ul>
+</li>
+</ul>
+<ul>
 <li><h5 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a>HTML段落</h5><p>HTML 段落是通过标签<code>&lt;p&gt;</code> 来定义的。</p>
 </li>
 <li><h5 id="HTML链接"><a href="#HTML链接" class="headerlink" title="HTML链接"></a>HTML链接</h5><p>HTML 链接是通过标签<code>&lt;a&gt;</code>来定义的。</p>

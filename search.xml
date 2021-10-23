@@ -47,11 +47,33 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></stron
   <entry>
     <title>计算机网络第六章 链路层和局域网</title>
     <url>/2021/10/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E9%93%BE%E8%B7%AF%E5%B1%82%E5%92%8C%E5%B1%80%E5%9F%9F%E7%BD%91/</url>
-    <content><![CDATA[<!-- ![(●ˇ∀ˇ●)](https://z3.ax1x.com/2021/10/20/5rP0zD.gif "(●'◡'●)")-->
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- ![(●ˇ∀ˇ●)](https://z3.ax1x.com/2021/10/20/5rP0zD.gif "(●'◡'●)")-->
 
 <span id="more"></span>
 
 <hr>
+
+        <div id="aplayer-cuYPGMKG" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-cuYPGMKG"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "你曾是少年",
+              author: "S.H.E",
+              url: "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbGlwczU4SHNZMDNoaHNlV0hGVl9GYkdjdXdWP2U9ZEt3VG4w.mp3",
+              pic: "https://qiantigers.coding.net/p/pic/d/pic/git/raw/master/2020/10/23/20201023174449.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
 <h2 id="6-0术语-名词"><a href="#6-0术语-名词" class="headerlink" title="6.0术语(名词)"></a>6.0术语(名词)</h2><ul>
 <li>节点</li>
 <li>链路</li>
@@ -412,6 +434,25 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></stron
 <li><p>属性与属性、属性与标签之间空一个间隔 ，如：**&lt;标签 name=”value” name=’value’&gt;** </p>
 </li>
 </ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>计网其他章节的零散记录</title>
+    <url>/2021/10/22/%E8%AE%A1%E7%BD%91%E5%85%B6%E4%BB%96%E7%AB%A0%E8%8A%82%E7%9A%84%E9%9B%B6%E6%95%A3%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="代理发现"><a href="#代理发现" class="headerlink" title="代理发现"></a>代理发现</h3><span id="more"></span>
+
+<p>指让移动节点知道自己当前所在网络（归属网络或外部网络）的代理（归属代理或外部代理）身份</p>
+<p>代理发现的两种方法：代理通告or代理请求</p>
+<p>代理通告是代理周期性地在所有链路上广播一个类型字段为9（路由器发现）的<strong>扩展</strong>ICMP报文。报文内有代理的IP地址以及</p>
+<h4 id="7-4-2-3G蜂窝数据网：将因特网扩展到蜂窝用户"><a href="#7-4-2-3G蜂窝数据网：将因特网扩展到蜂窝用户" class="headerlink" title="7.4.2 3G蜂窝数据网：将因特网扩展到蜂窝用户"></a>7.4.2 3G蜂窝数据网：将因特网扩展到蜂窝用户</h4><h5 id="1-3G核心网"><a href="#1-3G核心网" class="headerlink" title="1.3G核心网"></a>1.3G核心网</h5><p>​        3G核心网将无线电接入网连接到公共因特网。3G利用了部分2G（蜂窝语音网）系统的基础设备（但是3G网中对同意设备可能有不同的术语，例如2G的BSC在3G中称为RNC）。</p>
+<hr>
+<h4 id="8-2-1对称密匙密码体制"><a href="#8-2-1对称密匙密码体制" class="headerlink" title="8.2.1对称密匙密码体制"></a>8.2.1对称密匙密码体制</h4><h5 id="1-块密码"><a href="#1-块密码" class="headerlink" title="1.块密码"></a>1.块密码</h5><p>​    把二进制的明文以k为单位区分为块（设k=2，110010则被分为11、00、10，3个块），每个块分别对应一个映射</p>
+<p>​    密匙就是映射表</p>
+<p>​    映射表有2的k次方个映射关系</p>
+<p>​    函数模拟随机排列（没看懂）</p>
+<h5 id="2密码块链接"><a href="#2密码块链接" class="headerlink" title="2密码块链接"></a>2密码块链接</h5><p>​    如果块密码采用单一的映射关系加密报文，则明文中的相同内容经加密过后也是相同的，这就很容易让攻击者猜出相对于的映射关系（比如报文中的固定格式，攻击者很容易根据重复出现的密文，推断出相应的报文格式明文）</p>
+<p>​    可以通过每个明文块分别与一个随机生成的字符串比特串进行<strong>异或操作</strong>，然后再加密。这样相同的明文输出的密文也不一样。发送方向接收方发送<em>密文+与它进行异或操作的比特串</em>。</p>
+<p>​    上述方法中，发送者要发送<em>密文+比特串</em>，所以比正常发送密文多传输了一倍数据量。<strong>密码块链接</strong>是上一种方法的优化（只需要额外发送一个比特串）：发送方向接受方发送一个比特串，并用这个比特串于第一个明文块进行异或操作，然后用密匙加密，输出密文发送给接收方；接收方接到比特串和密文，用密匙和比特串获得第一块明文；此后，发送方用生成的上一个密文作为比特串；而接收方用从发送方获得的上一个密文作为比特串</p>
 ]]></content>
   </entry>
 </search>

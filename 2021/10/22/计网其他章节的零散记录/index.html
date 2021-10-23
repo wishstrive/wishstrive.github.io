@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <title>
+    计网其他章节的零散记录 |
+    
+    Wishstrive
+  </title>
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Wishstrive" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-计网其他章节的零散记录" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  计网其他章节的零散记录
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/10/22/%E8%AE%A1%E7%BD%91%E5%85%B6%E4%BB%96%E7%AB%A0%E8%8A%82%E7%9A%84%E9%9B%B6%E6%95%A3%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time datetime="2021-10-22T15:44:27.000Z" itemprop="datePublished">2021-10-22</time>
+</a>
+      
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <h3 id="代理发现"><a href="#代理发现" class="headerlink" title="代理发现"></a>代理发现</h3><span id="more"></span>
+
+<p>指让移动节点知道自己当前所在网络（归属网络或外部网络）的代理（归属代理或外部代理）身份</p>
+<p>代理发现的两种方法：代理通告or代理请求</p>
+<p>代理通告是代理周期性地在所有链路上广播一个类型字段为9（路由器发现）的<strong>扩展</strong>ICMP报文。报文内有代理的IP地址以及</p>
+<h4 id="7-4-2-3G蜂窝数据网：将因特网扩展到蜂窝用户"><a href="#7-4-2-3G蜂窝数据网：将因特网扩展到蜂窝用户" class="headerlink" title="7.4.2 3G蜂窝数据网：将因特网扩展到蜂窝用户"></a>7.4.2 3G蜂窝数据网：将因特网扩展到蜂窝用户</h4><h5 id="1-3G核心网"><a href="#1-3G核心网" class="headerlink" title="1.3G核心网"></a>1.3G核心网</h5><p>​        3G核心网将无线电接入网连接到公共因特网。3G利用了部分2G（蜂窝语音网）系统的基础设备（但是3G网中对同意设备可能有不同的术语，例如2G的BSC在3G中称为RNC）。</p>
+<hr>
+<h4 id="8-2-1对称密匙密码体制"><a href="#8-2-1对称密匙密码体制" class="headerlink" title="8.2.1对称密匙密码体制"></a>8.2.1对称密匙密码体制</h4><h5 id="1-块密码"><a href="#1-块密码" class="headerlink" title="1.块密码"></a>1.块密码</h5><p>​    把二进制的明文以k为单位区分为块（设k=2，110010则被分为11、00、10，3个块），每个块分别对应一个映射</p>
+<p>​    密匙就是映射表</p>
+<p>​    映射表有2的k次方个映射关系</p>
+<p>​    函数模拟随机排列（没看懂）</p>
+<h5 id="2密码块链接"><a href="#2密码块链接" class="headerlink" title="2密码块链接"></a>2密码块链接</h5><p>​    如果块密码采用单一的映射关系加密报文，则明文中的相同内容经加密过后也是相同的，这就很容易让攻击者猜出相对于的映射关系（比如报文中的固定格式，攻击者很容易根据重复出现的密文，推断出相应的报文格式明文）</p>
+<p>​    可以通过每个明文块分别与一个随机生成的字符串比特串进行<strong>异或操作</strong>，然后再加密。这样相同的明文输出的密文也不一样。发送方向接收方发送<em>密文+与它进行异或操作的比特串</em>。</p>
+<p>​    上述方法中，发送者要发送<em>密文+比特串</em>，所以比正常发送密文多传输了一倍数据量。<strong>密码块链接</strong>是上一种方法的优化（只需要额外发送一个比特串）：发送方向接受方发送一个比特串，并用这个比特串于第一个明文块进行异或操作，然后用密匙加密，输出密文发送给接收方；接收方接到比特串和密文，用密匙和比特串获得第一块明文；此后，发送方用生成的上一个密文作为比特串；而接收方用从发送方获得的上一个密文作为比特串</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wishstrive.github.io/2021/10/22/%E8%AE%A1%E7%BD%91%E5%85%B6%E4%BB%96%E7%AB%A0%E8%8A%82%E7%9A%84%E9%9B%B6%E6%95%A3%E8%AE%B0%E5%BD%95/" data-id="ckv3cz2ye0000jkv07k1odold" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  
+  <a href="/2021/10/20/%E5%89%8D%E7%AB%AF/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">前端</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+  
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>Wishstrive &copy; 2021</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="Wishstrive"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archives</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">Gallery</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">About</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/copybtn.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+</body>
+
+</html>

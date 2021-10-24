@@ -53,12 +53,12 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></stron
 
 <hr>
 
-        <div id="aplayer-cuYPGMKG" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-dhbSlptz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-cuYPGMKG"),
+            element: document.getElementById("aplayer-dhbSlptz"),
             narrow: false,
             autoplay: true,
             showlrc: false,

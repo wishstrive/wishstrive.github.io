@@ -3,7 +3,7 @@
   <entry>
     <title>markdown语法</title>
     <url>/2021/10/12/markdown%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h6 id="无摘要"><a href="#无摘要" class="headerlink" title="无摘要"></a>无摘要</h6><span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h6 id="无摘要"><a href="#无摘要" class="headerlink" title="无摘要"></a>无摘要</h6><span id="more"></span>
 
 <h2 id="1-标题（-后米接一个空格）"><a href="#1-标题（-后米接一个空格）" class="headerlink" title="1.标题（#后米接一个空格）"></a>1.标题（#后米接一个空格）</h2><ul>
 <li><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1></li>
@@ -23,9 +23,9 @@
 <hr>
 <h3 id="3-图片"><a href="#3-图片" class="headerlink" title="3.图片"></a>3.图片</h3><ul>
 <li><p>语法：</p>
-<p><code>![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;)</code></p>
+<p><code>![alt](图片地址 &#39;&#39;title&#39;&#39;)</code></p>
 </li>
-<li><p>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
+<li><p>alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
 <p>如果要将笔记发布到网络，图片地址需要提供外链，本地连接不行</p>
 </li>
 <li><p>一篇关于外链图床选择的文章<a href="https://www.jianshu.com/p/ea1eb11db63f">markdown图床 - 简书 (jianshu.com)</a></p>

@@ -485,6 +485,8 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></stron
     <title>零散知识</title>
     <url>/2021/11/08/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<span id="more"></span>
+
 <p>1.c++结构体初始化的方式</p>
 <p>2.c++结构体地址等于其首个成员变量的地址</p>
 <p>3.c++类内定义的重载类型转换操作符会自动在类内成员相应赋值时生效(个人理解)如：</p>

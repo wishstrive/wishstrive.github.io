@@ -42,6 +42,9 @@
 <p><strong>其余见下方链接(<em>懒得打了</em>)</strong></p>
 <p> <strong><a
 href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></strong> </p>
+<hr>
+<p>markdown front-matter语法：</p>
+<p><a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter | Hexo</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -320,7 +323,7 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></stron
   <entry>
     <title>前端</title>
     <url>/2021/10/20/%E5%89%8D%E7%AB%AF/</url>
-    <content><![CDATA[<hr>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
 <p><strong>结构</strong>：HTML用于描述页面的结构</p>
 <p><strong>表现</strong>：CSS用于控制页面中的元素样式</p>
 <p><strong>行为</strong>：JavaScript用于相应用户操作</p>
@@ -434,6 +437,28 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></stron
 <li><p>属性与属性、属性与标签之间空一个间隔 ，如：**&lt;标签 name=”value” name=’value’&gt;** </p>
 </li>
 </ul>
+<hr>
+<h4 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h4><p>​    编码与解码要用相同的字符集，才不会出现乱码现象</p>
+<p>​    (万国码——UTF-8)</p>
+<hr>
+<h4 id="html文档"><a href="#html文档" class="headerlink" title="html文档"></a>html文档</h4><ul>
+<li>zeal离线文档软件(包含了超级多(可选择性下载)语言或软件的文档)：<a href="https://zealdocs.org/" title="怎么网站排版这么像adobe公司的？">zeal下载网站</a></li>
+<li>w3scool中文网站：<a href="https://www.w3school.com.cn/">w3school 在线教程</a></li>
+</ul>
+<hr>
+<h4 id="html转义字符"><a href="#html转义字符" class="headerlink" title="html转义字符"></a>html转义字符</h4><p>​    格式:<code> &amp;xxx;</code></p>
+<p>​    其中<strong>xxx</strong>对不同的字符有不同的值</p>
+<p>​    <em>在网页中编写的多个空格默认情况下会自动解析为一个空格</em></p>
+<hr>
+<h4 id="html语义化标签"><a href="#html语义化标签" class="headerlink" title="html语义化标签"></a>html语义化标签</h4><ul>
+<li><p>在html中应该注重标签表示的语义，而不是在浏览器中显示的效果(这是css的工作)</p>
+<p>如<code>h1</code>标签表示为一级标题(重要性高)，而不是在于其在浏览器中的大小效果(css可以修改其大小)</p>
+</li>
+<li><p>在页面中独占一行的元素称为块元素(block element)</p>
+</li>
+<li><p>在页面中不会独占一行的元素称为行内元素/内联元素(inline element)</p>
+</li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -453,6 +478,18 @@ href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></stron
 <h5 id="2密码块链接"><a href="#2密码块链接" class="headerlink" title="2密码块链接"></a>2密码块链接</h5><p>​    如果块密码采用单一的映射关系加密报文，则明文中的相同内容经加密过后也是相同的，这就很容易让攻击者猜出相对于的映射关系（比如报文中的固定格式，攻击者很容易根据重复出现的密文，推断出相应的报文格式明文）</p>
 <p>​    可以通过每个明文块分别与一个随机生成的字符串比特串进行<strong>异或操作</strong>，然后再加密。这样相同的明文输出的密文也不一样。发送方向接收方发送<em>密文+与它进行异或操作的比特串</em>。</p>
 <p>​    上述方法中，发送者要发送<em>密文+比特串</em>，所以比正常发送密文多传输了一倍数据量。<strong>密码块链接</strong>是上一种方法的优化（只需要额外发送一个比特串）：发送方向接受方发送一个比特串，并用这个比特串于第一个明文块进行异或操作，然后用密匙加密，输出密文发送给接收方；接收方接到比特串和密文，用密匙和比特串获得第一块明文；此后，发送方用生成的上一个密文作为比特串；而接收方用从发送方获得的上一个密文作为比特串</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>零散知识</title>
+    <url>/2021/11/08/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<p>1.c++结构体初始化的方式</p>
+<p>2.c++结构体地址等于其首个成员变量的地址</p>
+<p>3.c++类内定义的重载类型转换操作符会自动在类内成员相应赋值时生效(个人理解)如：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Fraction</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="keyword">int</span> num;</span><br><span class="line">	<span class="keyword">int</span> den;</span><br><span class="line">	<span class="built_in">Fraction</span>(<span class="keyword">int</span> n,<span class="keyword">int</span> d):<span class="built_in">num</span>(n),<span class="built_in">den</span>(d)</span><br><span class="line">	&#123;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">operator</span> <span class="title">double</span><span class="params">()</span>           <span class="comment">//double重载</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (<span class="keyword">double</span>)num/den;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="function">Fraction <span class="title">d</span><span class="params">(<span class="number">4</span>, <span class="number">5</span>)</span></span>;</span><br><span class="line">	<span class="keyword">double</span> r=d;                 <span class="comment">//该句将重载double应用于d。等价于double r=(double)d;</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%lf&quot;</span>,r);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果为:<code>0.800000</code></p>
+<hr>
 ]]></content>
   </entry>
 </search>

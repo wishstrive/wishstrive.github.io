@@ -11,7 +11,8 @@
 
 <hr>
 <h2 id="html5"><a href="#html5" class="headerlink" title="html5"></a>html5</h2><h4 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h4><hr>
-<h5 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML?"></a>什么是HTML?</h5><p><em><strong>HTML 是用来描述网页的一种语言</strong></em>。</p>
+<p>​    <em><strong>“什么是HTML?”</strong></em></p>
+<p><em><strong>HTML 是用来描述网页的一种语言</strong></em>。</p>
 <blockquote>
 <ul>
 <li>HTML 指的是超文本标记语言: <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</li>
@@ -69,12 +70,12 @@
 <li><h5 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a>HTML段落</h5><p>HTML 段落是通过标签<code>&lt;p&gt;</code> 来定义的。</p>
 </li>
 <li><h5 id="HTML链接"><a href="#HTML链接" class="headerlink" title="HTML链接"></a>HTML链接</h5><p>HTML 链接是通过标签<code>&lt;a&gt;</code>来定义的。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;网站链接&quot;&gt;这是一个链接&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;网站链接&quot;</span>&gt;</span>这是一个链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>提示:在 href 属性中指定链接的地址。</p>
 </li>
 <li><h5 id="HTML图像"><a href="#HTML图像" class="headerlink" title="HTML图像"></a>HTML图像</h5><p>HTML 图像是通过标签 <code>&lt;img&gt; </code>来定义的。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img loading=&quot;lazy&quot; src=&quot;/images/logo.png&quot; width=&quot;258&quot; height=&quot;39&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span> <span class="attr">src</span>=<span class="string">&quot;/images/logo.png&quot;</span> <span class="attr">width</span>=<span class="string">&quot;258&quot;</span> <span class="attr">height</span>=<span class="string">&quot;39&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>注意： 图像的名称和尺寸是以属性的形式提供的。</p>
 </li>
@@ -117,8 +118,11 @@
 <p>​    (万国码——UTF-8)</p>
 <hr>
 <h4 id="html文档"><a href="#html文档" class="headerlink" title="html文档"></a>html文档</h4><ul>
-<li>zeal离线文档软件(包含了超级多(可选择性下载)语言或软件的文档)：<a href="https://zealdocs.org/" title="怎么网站排版这么像adobe公司的？">zeal下载网站</a></li>
-<li>w3scool中文网站：<a href="https://www.w3school.com.cn/">w3school 在线教程</a></li>
+<li>zeal离线文档软件(包含了超级多(可选择性下载)语言或软件的文档)：<a href="https://zealdocs.org/" title="怎么网站排版这么像adobe公司的？">zeal下载网站</a><ul>
+<li>​    我服了，下载完之后打不开下载文档的页面，像关闭就显示*”please wait for all operations to finish.”*<del>(还不让我关了是吧)</del></li>
+</ul>
+</li>
+<li>w3scool中文网站：<a href="https://www.w3school.com.cn/tags/index.asp">HTML 标签参考手册 (w3school.com.cn)</a></li>
 </ul>
 <hr>
 <h4 id="html转义字符"><a href="#html转义字符" class="headerlink" title="html转义字符"></a>html转义字符</h4><p>​    格式:<code> &amp;xxx;</code></p>
@@ -256,7 +260,7 @@
 <tr>
 <td>id</td>
 <td>自己设定(同一个html文件中不能有重复的id)</td>
-<td>每一个标签都可以添加一个id属性(不限于a标签)；id是元素的唯一标识符</td>
+<td>每一个标签都可以添加一个id属性(这种属性称为全局属性)；id是元素的唯一标识符；id值<strong>不能以数字开头</strong>，也不能含有空格</td>
 </tr>
 </tbody></table>
 <table>
@@ -286,7 +290,206 @@
 <p>​                    如<code>xxx.html</code>等价于<code>./xxx.html</code>即当前目录下的xxx.html文件</p>
 <p>​                )</p>
 <hr>
-<h4 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h4>]]></content>
+<h4 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h4><ul>
+<li><p>在html中，图像由<code>&lt;img&gt;</code>标签定义</p>
+<ul>
+<li><code>img</code>标签是自结束标签(也称空标签，意思是说，它只包含属性，并且没有闭合标签)</li>
+<li><code>img</code>标签属于嵌入标签</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>用法</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>src</td>
+<td><code>&lt;img src=&quot;url&quot; &gt;</code></td>
+<td>源属性src 指 “source”。源属性的值是图像的 URL 地址。</td>
+</tr>
+<tr>
+<td>alt</td>
+<td><code>&lt;img src=&quot;url&quot; alt=&quot;文本&quot;&gt;</code></td>
+<td>当浏览器无法载入图像时，替换文本属性可告诉读者他们失去的信息。此时，浏览器将显示这个替代性的文本而不是图像。</td>
+</tr>
+<tr>
+<td>width</td>
+<td><code>&lt;img src=&quot;url&quot; width=&quot;intpx&quot;&gt;</code></td>
+<td>宽，单位像素(px),若单独设置，则会按图片比例缩放</td>
+</tr>
+<tr>
+<td>height</td>
+<td><code>&lt;img src=&quot;url&quot; height=&quot;intpx&quot;&gt;</code></td>
+<td>高，单位像素,若单独设置，则会按图片比例缩放</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p>使用外链src引用的图片加载速度较慢，若需要与页面同步加载图片的话可以将图片转为base64编码，然后作为src的值</p>
+<hr>
+<h4 id="内联框架"><a href="#内联框架" class="headerlink" title="内联框架"></a>内联框架</h4><p>​    iframe 元素会创建包含另外一个文档的内联框架（即行内框架）。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>src</td>
+<td><em>URL</em></td>
+<td>规定在 iframe 中显示的文档的 URL。</td>
+</tr>
+<tr>
+<td>height</td>
+<td>pixels%</td>
+<td>规定 iframe 的高度。</td>
+</tr>
+<tr>
+<td>width</td>
+<td>pixels%</td>
+<td>设置图像的宽度。</td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="音频-视频标签"><a href="#音频-视频标签" class="headerlink" title="音频/视频标签"></a>音频/视频标签</h4><ul>
+<li>音频：<code>&lt;audio&gt; </code>标签    <ul>
+<li><a href="https://www.w3school.com.cn/tags/tag_audio.asp"><code>&lt;audio&gt;</code></a></li>
+</ul>
+</li>
+<li>视频：<code>video</code>标签<ul>
+<li><a href="https://www.w3school.com.cn/tags/tag_video.asp"><video></a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="HTML-全局属性"><a href="#HTML-全局属性" class="headerlink" title="HTML 全局属性"></a>HTML 全局属性</h4><p><a href="https://www.w3school.com.cn/tags/html_ref_standardattributes.asp">HTML 全局属性 </a></p>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">accesskey</td>
+<td align="left">规定激活元素的快捷键。</td>
+</tr>
+<tr>
+<td align="left">class</td>
+<td align="left">规定元素的一个或多个类名（引用样式表中的类）。</td>
+</tr>
+<tr>
+<td align="left">contenteditable</td>
+<td align="left">规定元素内容是否可编辑。</td>
+</tr>
+<tr>
+<td align="left">contextmenu</td>
+<td align="left">规定元素的上下文菜单。上下文菜单在用户点击元素时显示。</td>
+</tr>
+<tr>
+<td align="left">data-*</td>
+<td align="left">用于存储页面或应用程序的私有定制数据。</td>
+</tr>
+<tr>
+<td align="left">dir</td>
+<td align="left">规定元素中内容的文本方向。</td>
+</tr>
+<tr>
+<td align="left">draggable</td>
+<td align="left">规定元素是否可拖动。</td>
+</tr>
+<tr>
+<td align="left">dropzone</td>
+<td align="left">规定在拖动被拖动数据时是否进行复制、移动或链接。</td>
+</tr>
+<tr>
+<td align="left">hidden</td>
+<td align="left">规定元素仍未或不再相关。</td>
+</tr>
+<tr>
+<td align="left">id</td>
+<td align="left">规定元素的唯一 id。</td>
+</tr>
+<tr>
+<td align="left">lang</td>
+<td align="left">规定元素内容的语言。</td>
+</tr>
+<tr>
+<td align="left">spellcheck</td>
+<td align="left">规定是否对元素进行拼写和语法检查。</td>
+</tr>
+<tr>
+<td align="left">style</td>
+<td align="left">规定元素的行内 CSS 样式。</td>
+</tr>
+<tr>
+<td align="left">tabindex</td>
+<td align="left">规定元素的 tab 键次序。</td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td align="left">规定有关元素的额外信息。</td>
+</tr>
+<tr>
+<td align="left">translate</td>
+<td align="left">规定是否应该翻译元素内容。</td>
+</tr>
+</tbody></table>
+<hr>
+<p>html的学习主要就是标签的使用，以上是一些常用标签。其他的标签可以在需要时去文档查找。<a href="https://www.w3school.com.cn/tags/index.asp">HTML 标签参考手册 (w3school.com.cn)</a></p>
+<hr>
+<h2 id="css3"><a href="#css3" class="headerlink" title="css3"></a>css3</h2><h4 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h4><hr>
+<p>​    <em><strong>“什么是css？”</strong></em></p>
+<ul>
+<li><p><strong>CSS 是一种描述 HTML 文档<u>样式</u>的语言</strong></p>
+<p>（和html一样，也不属于编程语言，因为没有计算和逻辑判断能力）</p>
+</li>
+<li><p><em>CSS</em> 指的是<strong>层叠样式表</strong> (<em>C</em>ascading <em>S</em>tyle <em>S</em>heets)</p>
+</li>
+<li><p>CSS 描述了如何在屏幕、纸张或其他媒体上<strong>显示</strong> HTML 元素</p>
+<p>(包括针对不同设备和屏幕尺寸的设计和布局)</p>
+</li>
+<li><p>CSS 节省了大量工作。它可以同时控制多张网页的布局</p>
+</li>
+<li><p>外部样式表存储在 CSS 文件中</p>
+</li>
+</ul>
+<hr>
+<h4 id="css作用的方式"><a href="#css作用的方式" class="headerlink" title="css作用的方式"></a>css作用的方式</h4><ol>
+<li><strong>外部样式表</strong>（外部css）</li>
+<li>内部样式表（内部css）-<em>不建议使用</em></li>
+<li>内联样式（行内css）-<em>不建议使用</em></li>
+</ol>
+<hr>
+<h5 id="1-外部样式表"><a href="#1-外部样式表" class="headerlink" title="1.外部样式表"></a>1.外部样式表</h5><p>​        把css写带css文件内，然后在html的<code>&lt;head&gt;</code>元素中使用<code>&lt;link&gt;</code>标签进行引用，如：</p>
+<p>.html</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;mystyle.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>.css</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: lightblue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: navy;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="2-内部样式表"><a href="#2-内部样式表" class="headerlink" title="2.内部样式表"></a>2.内部样式表</h5><p>​        内部样式直接在html文件内的<code>head</code>元素内使用css选择器</p>
+<hr>
+<h5 id="3-内联样式"><a href="#3-内联样式" class="headerlink" title="3.内联样式"></a>3.内联样式</h5><p>​        用于为单个元素设置css样式。直接在需要设置样式的元素内使用<code>style</code>属性</p>
+<hr>
+<h5 id="多个样式表时优先级"><a href="#多个样式表时优先级" class="headerlink" title="多个样式表时优先级"></a>多个样式表时优先级</h5><p>​        如果在不同样式表中为同一选择器（元素）定义了一些属性，则将使用最后读取的样式表中的值。</p>
+<p>假设某个<em>外部样式表</em>为<code>&lt;h1&gt;</code>元素设定的如下样式：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: navy;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​        然后，假设某个<em>内部样式表</em>也为 <code>&lt;h1&gt; </code>元素设置了如下样式：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: orange;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​        实例</p>
+<p>​        如果内部样式是在链接到外部样式表之后定义的，则 <code>&lt;h1&gt; </code>元素将是橙色：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;mystyle.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css"><span class="selector-tag">h1</span> &#123;</span></span><br><span class="line"><span class="css">  <span class="attribute">color</span>: orange;</span></span><br><span class="line"><span class="css">&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+]]></content>
   </entry>
   <entry>
     <title>markdown语法</title>

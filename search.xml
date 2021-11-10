@@ -10,8 +10,8 @@
 <span id="more"></span>
 
 <hr>
-<h2 id="html5"><a href="#html5" class="headerlink" title="html5"></a>html5</h2><h3 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h3><hr>
-<h4 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML?"></a>什么是HTML?</h4><p><em><strong>HTML 是用来描述网页的一种语言</strong></em>。</p>
+<h2 id="html5"><a href="#html5" class="headerlink" title="html5"></a>html5</h2><h4 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h4><hr>
+<h5 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML?"></a>什么是HTML?</h5><p><em><strong>HTML 是用来描述网页的一种语言</strong></em>。</p>
 <blockquote>
 <ul>
 <li>HTML 指的是超文本标记语言: <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</li>
@@ -228,7 +228,7 @@
 <h4 id="html超链接"><a href="#html超链接" class="headerlink" title="html超链接"></a>html超链接</h4><ul>
 <li>超链接可以让我们从一个页面跳转到其他页面，或者是当前页面的其他的位置</li>
 <li>使用a标签来定义超链接<ul>
-<li>属性:<br>href指定跳转的目标路径<br>值可以是一个外部网站的地址<br>也可以写一个内部页面(相对路径)的地址</li>
+<li>属性:<br>href指定跳转的目标路径<br>值可以是一个外部网站的地址(绝对路径)<br>也可以写一个内部页面(相对路径)的地址</li>
 </ul>
 </li>
 </ul>
@@ -238,6 +238,27 @@
 </ul>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;链接&quot;</span>&gt;</span>超链接显示的名称<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+
+
+<table>
+<thead>
+<tr>
+<th>标签a的属性</th>
+<th>值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>target</td>
+<td><code>_self</code>(缺省值);<code>_blank</code></td>
+<td>是在本窗口打开(<code>_self</code>)超链接还是在新窗口打开(<code>_blank</code>)</td>
+</tr>
+<tr>
+<td>id</td>
+<td>自己设定(同一个html文件中不能有重复的id)</td>
+<td>每一个标签都可以添加一个id属性(不限于a标签)；id是元素的唯一标识符</td>
+</tr>
+</tbody></table>
 <table>
 <thead>
 <tr>
@@ -246,17 +267,26 @@
 </tr>
 </thead>
 <tbody><tr>
+<td>#</td>
+<td>跳转到当前页面顶内部</td>
+</tr>
+<tr>
+<td>#id</td>
+<td>跳转到id处</td>
+</tr>
+<tr>
 <td>javascript</td>
 <td>可作占位符，点击超链接不会有反应</td>
 </tr>
 </tbody></table>
 <hr>
-<h4 id="html路径"><a href="#html路径" class="headerlink" title="html路径"></a>html路径</h4><h5 id="1-相对路径"><a href="#1-相对路径" class="headerlink" title="1.相对路径"></a>1.相对路径</h5><p>​    <em>当我们需要跳转到一个服务器内部页面时，通常会采用相对路径</em></p>
+<h4 id="html相对路径"><a href="#html相对路径" class="headerlink" title="html相对路径"></a>html相对路径</h4><p>​    <em>当我们需要跳转到一个服务器内部页面时，通常会采用相对路径</em></p>
 <p>​    语法：<code>./</code>表示当前路径；<code>../</code>表示上一级路径</p>
 <p>​                (若开头没有./或../，则默认为./</p>
 <p>​                    如<code>xxx.html</code>等价于<code>./xxx.html</code>即当前目录下的xxx.html文件</p>
 <p>​                )</p>
-]]></content>
+<hr>
+<h4 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h4>]]></content>
   </entry>
   <entry>
     <title>markdown语法</title>

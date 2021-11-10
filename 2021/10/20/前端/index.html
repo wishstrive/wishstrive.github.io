@@ -203,8 +203,129 @@
 </li>
 <li><p>在页面中不会独占一行的元素称为<strong>行内元素/内联元素</strong>(inline element)</p>
 </li>
+<li><p>一般块元素内能放行内元素(也能放块元素)，但是不会在行内元素内放块元素</p>
+<ul>
+<li>p元素内不能放块元素</li>
+<li>a元素内能放除了自身标签外的所有元素</li>
+</ul>
+</li>
+<li><p>在浏览器解析网页时会自动对网页中不规范的内容进行修正</p>
+<ul>
+<li><p>比如：元素写在根元素的外部</p>
+<p>​            p元素中嵌套了块元素</p>
+<p>​            根元素内出现了除head和body以外的子标签</p>
+<ul>
+<li>修正发生在主机内存中(通过F12开发者工具中element查看)，而不会修改源码</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>结构化语义标签(content sectioning)</p>
+<ul>
+<li><table>
+<thead>
+<tr>
+<th>标签</th>
+<th>意义</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>header</td>
+<td>表示网页的头部</td>
+<td>html5新加，较少使用</td>
+</tr>
+<tr>
+<td>main</td>
+<td>表示网页的主体部分(一个页面中只会有一个main)</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>footer</td>
+<td>表示网页的底部</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>nav</td>
+<td>表示网页中的导航</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>aside</td>
+<td>和主体相关的其他内容(侧边栏)</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>article</td>
+<td>表示一个独立的文章</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>section</td>
+<td>表示一个独立的区块，上边的标签都不能表示时使用section</td>
+<td>同上</td>
+</tr>
+<tr>
+<td><strong>div</strong></td>
+<td>没有语义，就用来表示一个区块，目前来讲div还是我们主要的布局元素</td>
+<td>较多使用</td>
+</tr>
+<tr>
+<td><strong>span</strong></td>
+<td>没有任何的语义，一般用于在网页中选中文字</td>
+<td>较多使用</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
 </ul>
 <hr>
+<h4 id="html列表"><a href="#html列表" class="headerlink" title="html列表"></a>html列表</h4><ul>
+<li><p>html列表一 共有三种:<br>1、有序列表<br>2、无序列表<br>3、定义列表</p>
+</li>
+<li><p>无序列表，使用ol标签来创建无序列表<br>使用li表示列表项</p>
+</li>
+<li><p>无序列表，使用ul标签来创建无序列表<br>使用li表示列表项</p>
+</li>
+<li><p>定义列表，使用dl标签来创建一个定义列表<br> 使用相来表示定义的内容</p>
+<p>使用dd来对内容进行解释说明</p>
+</li>
+<li><p>列表可嵌套</p>
+</li>
+</ul>
+<hr>
+<h4 id="html超链接"><a href="#html超链接" class="headerlink" title="html超链接"></a>html超链接</h4><ul>
+<li>超链接可以让我们从一个页面跳转到其他页面，或者是当前页面的其他的位置</li>
+<li>使用a标签来定义超链接<ul>
+<li>属性:<br>href指定跳转的目标路径<br>值可以是一个外部网站的地址<br>也可以写一个内部页面(相对路径)的地址</li>
+</ul>
+</li>
+</ul>
+<p>a标签是是一个行内元素，在a标签中可以嵌套除它自身外的任何元素</p>
+<ul>
+<li>语法：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;链接&quot;</span>&gt;</span>超链接显示的名称<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>“链接”处可填值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>javascript</td>
+<td>可作占位符，点击超链接不会有反应</td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="html路径"><a href="#html路径" class="headerlink" title="html路径"></a>html路径</h4><h5 id="1-相对路径"><a href="#1-相对路径" class="headerlink" title="1.相对路径"></a>1.相对路径</h5><p>​    <em>当我们需要跳转到一个服务器内部页面时，通常会采用相对路径</em></p>
+<p>​    语法：<code>./</code>表示当前路径；<code>../</code>表示上一级路径</p>
+<p>​                (若开头没有./或../，则默认为./</p>
+<p>​                    如<code>xxx.html</code>等价于<code>./xxx.html</code>即当前目录下的xxx.html文件</p>
+<p>​                )</p>
 
       
     </div>

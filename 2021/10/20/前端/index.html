@@ -526,8 +526,8 @@
 <hr>
 <h4 id="css作用的方式"><a href="#css作用的方式" class="headerlink" title="css作用的方式"></a>css作用的方式</h4><ol>
 <li><strong>外部样式表</strong>（外部css）</li>
-<li>内部样式表（内部css）-<em>不建议使用</em></li>
-<li>内联样式（行内css）-<em>不建议使用</em></li>
+<li>内部样式表（内部css）</li>
+<li>内联样式（行内css）</li>
 </ol>
 <hr>
 <h5 id="1-外部样式表"><a href="#1-外部样式表" class="headerlink" title="1.外部样式表"></a>1.外部样式表</h5><p>​        把css写带css文件内，然后在html的<code>&lt;head&gt;</code>元素中使用<code>&lt;link&gt;</code>标签进行引用，如：</p>
@@ -538,9 +538,13 @@
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: lightblue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: navy;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h5 id="2-内部样式表"><a href="#2-内部样式表" class="headerlink" title="2.内部样式表"></a>2.内部样式表</h5><p>​        内部样式直接在html文件内的<code>head</code>元素内使用css选择器</p>
+<h5 id="2-内部样式表"><a href="#2-内部样式表" class="headerlink" title="2.内部样式表"></a>2.内部样式表</h5><p>​        内部样式直接在html文件内的<code>head</code>元素内使用<code>style</code>元素</p>
+<p>​            <code>style</code>标签内的语法属于css，和html无关</p>
 <hr>
 <h5 id="3-内联样式"><a href="#3-内联样式" class="headerlink" title="3.内联样式"></a>3.内联样式</h5><p>​        用于为单个元素设置css样式。直接在需要设置样式的元素内使用<code>style</code>属性</p>
+<ul>
+<li></li>
+</ul>
 <hr>
 <h5 id="多个样式表时优先级"><a href="#多个样式表时优先级" class="headerlink" title="多个样式表时优先级"></a>多个样式表时优先级</h5><p>​        如果在不同样式表中为同一选择器（元素）定义了一些属性，则将使用最后读取的样式表中的值。</p>
 <p>假设某个<em>外部样式表</em>为<code>&lt;h1&gt;</code>元素设定的如下样式：</p>
@@ -554,6 +558,172 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;mystyle.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css"><span class="selector-tag">h1</span> &#123;</span></span><br><span class="line"><span class="css">  <span class="attribute">color</span>: orange;</span></span><br><span class="line"><span class="css">&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <hr>
+<h4 id="css语法"><a href="#css语法" class="headerlink" title="css语法"></a>css语法</h4><p>​    css语法由选择器和声明块组成</p>
+<p><img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbGlwczU4SHNZMDNoaU9XdWhBUG9CbUZuMVQ0P2U9blZHS1Bx.jpg" alt="css语法" title="来自w3school"></p>
+<p>​    css注释为<code>/*被注释内容*/</code></p>
+<hr>
+<h4 id="css选择器"><a href="#css选择器" class="headerlink" title="css选择器"></a>css选择器</h4><p>​    CSS 选择器用于“查找”（或选取）要设置样式的 HTML 元素。</p>
+<p>​    我们可以将 CSS 选择器分为五类：</p>
+<ul>
+<li>[简单选择器](<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_selectors.asp">CSS 选择器 (w3school.com.cn)</a>)（根据名称、id、类来选取元素）</li>
+<li><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_combinators.asp">关系选择器</a>（根据它们之间的特定关系来选取元素）</li>
+<li><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_pseudo_classes.asp">伪类选择器</a>（根据特定状态选取元素）</li>
+<li><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_pseudo_elements.asp">伪元素选择器</a>（选取元素的一部分并设置其样式）</li>
+<li><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_attribute_selectors.asp">属性选择器</a>（根据属性或属性值来选取元素）</li>
+</ul>
+<hr>
+<h5 id="1-简单选择器："><a href="#1-简单选择器：" class="headerlink" title="1. 简单选择器："></a>1. 简单选择器：</h5><table>
+<thead>
+<tr>
+<th align="left">选择器</th>
+<th>名称</th>
+<th align="left">例子</th>
+<th align="left">例子描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_selectors.asp">.<em>class</em></a></td>
+<td>类选择器</td>
+<td align="left">.intro</td>
+<td align="left">选取所有 class=”intro” 的元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_selectors.asp">#<em>id</em></a></td>
+<td>id选择器</td>
+<td align="left">#firstname</td>
+<td align="left">选取 id=”firstname” 的那个元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_selectors.asp">*</a></td>
+<td>通用选择器</td>
+<td align="left">*</td>
+<td align="left">选取所有元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_selectors.asp"><em>element</em></a></td>
+<td>元素选择器</td>
+<td align="left">p</td>
+<td align="left">选取所有 <p> 元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_selectors.asp"><em>element</em>,<em>element</em>,..</a></td>
+<td>并集选择器(分组选择器)</td>
+<td align="left">div, p</td>
+<td align="left">选取所有 <div> 元素和所有 <p> 元素。</td>
+</tr>
+</tbody></table>
+<hr>
+<h5 id="2-关系选择器"><a href="#2-关系选择器" class="headerlink" title="2.关系选择器"></a>2.关系选择器</h5><table>
+<thead>
+<tr>
+<th>元素关系</th>
+<th>定义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>父元素</td>
+<td>直接包含子元素的元素叫做父元素</td>
+</tr>
+<tr>
+<td>子元素</td>
+<td>直接被父元素包含的元素是子元素</td>
+</tr>
+<tr>
+<td>祖先元素</td>
+<td>直接或间接包含后代元素的元素叫做祖先元素</td>
+</tr>
+<tr>
+<td>后代元素</td>
+<td>直接或间接被祖先元素包含的元素叫做后代元素</td>
+</tr>
+<tr>
+<td>兄弟元素</td>
+<td>拥有相同父元素的元素是兄弟元素</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>关系选择器</th>
+<th>语法</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>子元素选择器</td>
+<td><code>父元素&gt;子元素</code></td>
+<td>选中指定父元素的指定子元素</td>
+</tr>
+<tr>
+<td>后代选择器</td>
+<td><code>祖先元素 后代元素</code></td>
+<td>选中指定元素内的指定后代元素</td>
+</tr>
+<tr>
+<td>相邻兄弟选择器</td>
+<td><code>兄弟元素+下一个兄弟元素</code></td>
+<td>选择指定元素的下一个兄弟元素</td>
+</tr>
+<tr>
+<td>通用兄弟选择器</td>
+<td><code>兄弟元素~兄弟元素</code></td>
+<td>选择指定元素下面所有兄弟元素</td>
+</tr>
+</tbody></table>
+<hr>
+<h5 id="3-属性-attribute-选择器"><a href="#3-属性-attribute-选择器" class="headerlink" title="3.属性(attribute)选择器"></a>3.属性(attribute)选择器</h5><p>​    为带有特定属性或属性值的 HTML 元素设置样式</p>
+<table>
+<thead>
+<tr>
+<th>语法</th>
+<th>作用</th>
+<th>例子</th>
+<th>例子描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[attribute]</td>
+<td>选取带有指定属性的元素</td>
+<td>[target]</td>
+<td>选择带有 target 属性的所有元素。</td>
+</tr>
+<tr>
+<td>[attribute=”value”]</td>
+<td>选取带有指定属性和值的元素</td>
+<td>[target=_blank]</td>
+<td>选择带有 target=”_blank” 属性的所有元素。</td>
+</tr>
+<tr>
+<td>[attribute~=”value”]</td>
+<td>选取属性值<strong>包含指定词</strong>的元素</td>
+<td>[title~=flower]</td>
+<td>选择带有包含 “flower” 一词的 title 属性的所有元素。</td>
+</tr>
+<tr>
+<td>[attribute|=”value”]</td>
+<td>选取指定属性<strong>以指定值开头</strong>的元素；<br><strong>注意</strong>：<strong>值必须是完整</strong>或单独的单词，比如 class=”top” 或者后跟连字符的，比如 class=”top-text”。</td>
+<td>[lang|=en]</td>
+<td>选择带有以 “en” 开头的 lang 属性的所有元素。</td>
+</tr>
+<tr>
+<td>[attribute^=”value”]</td>
+<td>选取指定属性<strong>以指定值开头</strong>的元素<br>值不必是完整的</td>
+<td>a[href^=”https”]</td>
+<td>选择其 href 属性值以 “https” 开头的每个 <code>&lt;a&gt; </code>元素。</td>
+</tr>
+<tr>
+<td>[attribute$=”value”]</td>
+<td>选取指定属性<strong>以指定值结尾</strong>的元素<br>值不必是完整的</td>
+<td>a[href$=”.pdf”]</td>
+<td>选择其 href 属性值以 “.pdf” 结尾的每个<code>&lt;a&gt;</code>元素。</td>
+</tr>
+<tr>
+<td>[attribute*=”value”]</td>
+<td>选取属性值<strong>包含指定词</strong>的元素</td>
+<td>a[href*=”w3school”]</td>
+<td>选择其 href 属性值包含子串 “w3school” 的每个 <code>&lt;a&gt;</code> 元素。</td>
+</tr>
+</tbody></table>
 
       
     </div>

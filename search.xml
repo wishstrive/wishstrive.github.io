@@ -10,6 +10,7 @@
 <span id="more"></span>
 
 <hr>
+<p><a href="#bottom">跳转到底部</a></p>
 <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><hr>
 <p>​    <em><strong>“什么是HTML?”</strong></em></p>
 <p><em><strong>HTML 是用来描述网页的一种语言</strong></em>。</p>
@@ -254,7 +255,7 @@
 </thead>
 <tbody><tr>
 <td>target</td>
-<td><code>_self</code>(缺省值);<code>_blank</code></td>
+<td><code>_self</code>(缺省值);<br><code>_blank</code></td>
 <td>是在本窗口打开(<code>_self</code>)超链接还是在新窗口打开(<code>_blank</code>)</td>
 </tr>
 <tr>
@@ -477,9 +478,6 @@
 <p>​            <code>style</code>标签内的语法属于css，和html无关</p>
 <hr>
 <h5 id="3-内联样式"><a href="#3-内联样式" class="headerlink" title="3.内联样式"></a>3.内联样式</h5><p>​        用于为单个元素设置css样式。直接在需要设置样式的元素内使用<code>style</code>属性</p>
-<ul>
-<li></li>
-</ul>
 <hr>
 <h5 id="多个样式表时优先级"><a href="#多个样式表时优先级" class="headerlink" title="多个样式表时优先级"></a>多个样式表时优先级</h5><p>​        如果在不同样式表中为同一选择器（元素）定义了一些属性，则将使用最后读取的样式表中的值。</p>
 <p>假设某个<em>外部样式表</em>为<code>&lt;h1&gt;</code>元素设定的如下样式：</p>
@@ -843,7 +841,8 @@
 <blockquote>
 <p><a href="https://www.w3school.com.cn/css/css_pseudo_classes.asp">CSS 伪类 </a></p>
 </blockquote>
-<h6 id="语法：选择器-伪类"><a href="#语法：选择器-伪类" class="headerlink" title="语法：选择器:伪类"></a>语法：选择器:伪类</h6>]]></content>
+<h6 id="语法：选择器-伪类"><a href="#语法：选择器-伪类" class="headerlink" title="语法：选择器:伪类"></a>语法：选择器:伪类</h6><div id="bottom"> </div>
+]]></content>
   </entry>
   <entry>
     <title>markdown语法</title>

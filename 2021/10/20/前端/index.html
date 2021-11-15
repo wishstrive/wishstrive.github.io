@@ -75,7 +75,7 @@
 <span id="more"></span>
 
 <hr>
-<h2 id="html5"><a href="#html5" class="headerlink" title="html5"></a>html5</h2><h4 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h4><hr>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><hr>
 <p>​    <em><strong>“什么是HTML?”</strong></em></p>
 <p><em><strong>HTML 是用来描述网页的一种语言</strong></em>。</p>
 <blockquote>
@@ -507,7 +507,7 @@
 <hr>
 <p>html的学习主要就是标签的使用，以上是一些常用标签。其他的标签可以在需要时去文档查找。<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tags/index.asp">HTML 标签参考手册 (w3school.com.cn)</a></p>
 <hr>
-<h2 id="css3"><a href="#css3" class="headerlink" title="css3"></a>css3</h2><h4 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h4><hr>
+<h2 id="css3"><a href="#css3" class="headerlink" title="css3"></a>css3</h2><h5 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h5><hr>
 <p>​    <em><strong>“什么是css？”</strong></em></p>
 <ul>
 <li><p><strong>CSS 是一种描述 HTML 文档<u>样式</u>的语言</strong></p>
@@ -610,6 +610,12 @@
 <td>并集选择器(分组选择器)</td>
 <td align="left">div, p</td>
 <td align="left">选取所有 <div> 元素和所有 <p> 元素。</td>
+</tr>
+<tr>
+<td align="left">选择器1选择器2选择器3等{}</td>
+<td>交集选择器</td>
+<td align="left">p.intro</td>
+<td align="left">选取所有class=”intro”的p元素</td>
 </tr>
 </tbody></table>
 <hr>
@@ -724,7 +730,185 @@
 <td>选择其 href 属性值包含子串 “w3school” 的每个 <code>&lt;a&gt;</code> 元素。</td>
 </tr>
 </tbody></table>
-
+<hr>
+<h5 id="4-伪类选择器"><a href="#4-伪类选择器" class="headerlink" title="4.伪类选择器"></a>4.伪类选择器</h5><h6 id="什么是伪类？"><a href="#什么是伪类？" class="headerlink" title="什么是伪类？"></a>什么是伪类？</h6><blockquote>
+<p>伪类用于定义元素的特殊状态。</p>
+<p>例如，它可以用于：</p>
+<ul>
+<li>设置鼠标悬停在元素上时的样式</li>
+<li>为已访问和未访问链接设置不同的样式</li>
+<li>设置元素获得焦点时的样式</li>
+</ul>
+</blockquote>
+<p>​    个人理解，其实就是css给你定义的class，这些class支持动态匹配标签(比如自动包含鼠标悬停的位置的标签；或者某父标签里的第一个子标签)</p>
+<h6 id="所有-CSS-伪类"><a href="#所有-CSS-伪类" class="headerlink" title="所有 CSS 伪类"></a>所有 CSS 伪类</h6><table>
+<thead>
+<tr>
+<th align="left">选择器</th>
+<th align="left">例子</th>
+<th align="left">例子描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_active.asp">:active</a></td>
+<td align="left">a:active</td>
+<td align="left">选择活动的链接。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_checked.asp">:checked</a></td>
+<td align="left">input:checked</td>
+<td align="left">选择每个被选中的 <code>&lt;input&gt; </code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_disabled.asp">:disabled</a></td>
+<td align="left">input:disabled</td>
+<td align="left">选择每个被禁用的 <code>&lt;input&gt; </code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_empty.asp">:empty</a></td>
+<td align="left">p:empty</td>
+<td align="left">选择没有子元素的每个<code>&lt;p&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_enabled.asp">:enabled</a></td>
+<td align="left">input:enabled</td>
+<td align="left">选择每个已启用的<code> &lt;input&gt;</code> 元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_first-child.asp">:first-child</a></td>
+<td align="left">p:first-child</td>
+<td align="left">选择作为其父的首个子元素的每个 <code>&lt;p&gt; </code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_first-of-type.asp">:first-of-type</a></td>
+<td align="left">p:first-of-type</td>
+<td align="left">选择作为其父的首个<code>&lt;p&gt;</code>元素的每个 <code>&lt;p&gt; </code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_focus.asp">:focus</a></td>
+<td align="left">input:focus</td>
+<td align="left">选择获得焦点的<code> &lt;input&gt;</code> 元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_hover.asp">:hover</a></td>
+<td align="left">a:hover</td>
+<td align="left">选择鼠标悬停其上的链接。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_in-range.asp">:in-range</a></td>
+<td align="left">input:in-range</td>
+<td align="left">选择具有指定范围内的值的 <code>&lt;input&gt; </code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_invalid.asp">:invalid</a></td>
+<td align="left">input:invalid</td>
+<td align="left">选择所有具有无效值的<code>&lt;input&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_lang.asp">:lang(<em>language</em>)</a></td>
+<td align="left">p:lang(it)</td>
+<td align="left">选择每个 lang 属性值以 “it” 开头的<code>&lt;p&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_last-child.asp">:last-child</a></td>
+<td align="left">p:last-child</td>
+<td align="left">选择作为其父的最后一个子元素的每个<code>&lt;p&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_last-of-type.asp">:last-of-type</a></td>
+<td align="left">p:last-of-type</td>
+<td align="left">选择作为其父的最后一个<code>&lt;p&gt;</code>元素的每个<code>&lt;p&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_link.asp">:link</a></td>
+<td align="left">a:link</td>
+<td align="left">选择所有未被访问的链接。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_not.asp">:not(<em>selector</em>)</a></td>
+<td align="left">:not(p)</td>
+<td align="left">选择每个非 <code>&lt;p&gt; </code>元素的元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_nth-child.asp">:nth-child(<em>n</em>)</a></td>
+<td align="left">p:nth-child(2)</td>
+<td align="left">选择作为其父的第二个子元素的每个 <code>&lt;p&gt; </code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_nth-last-child.asp">:nth-last-child(<em>n</em>)</a></td>
+<td align="left">p:nth-last-child(2)</td>
+<td align="left">选择作为父的第二个子元素的每个<code>&lt;p&gt;</code>元素，从最后一个子元素计数。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_nth-last-of-type.asp">:nth-last-of-type(<em>n</em>)</a></td>
+<td align="left">p:nth-last-of-type(2)</td>
+<td align="left">选择作为父的第二个<code>&lt;p&gt;</code>元素的每个<code>&lt;p&gt;</code>元素，从最后一个子元素计数</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_nth-of-type.asp">:nth-of-type(<em>n</em>)</a></td>
+<td align="left">p:nth-of-type(2)</td>
+<td align="left">选择作为其父的第二个<code>&lt;p&gt;</code>元素的每个<code>&lt;p&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_only-of-type.asp">:only-of-type</a></td>
+<td align="left">p:only-of-type</td>
+<td align="left">选择作为其父的唯一 <code>&lt;p&gt; </code>元素的每个<code>&lt;p&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_only-child.asp">:only-child</a></td>
+<td align="left">p:only-child</td>
+<td align="left">选择作为其父的唯一子元素的<code> &lt;p&gt;</code> 元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_optional.asp">:optional</a></td>
+<td align="left">input:optional</td>
+<td align="left">选择不带 “required” 属性的<code>&lt;input&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_out-of-range.asp">:out-of-range</a></td>
+<td align="left">input:out-of-range</td>
+<td align="left">选择值在指定范围之外的 <code>&lt;input&gt;</code> 元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_read-only.asp">:read-only</a></td>
+<td align="left">input:read-only</td>
+<td align="left">选择指定了 “readonly” 属性的 <code>&lt;input&gt; </code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_read-write.asp">:read-write</a></td>
+<td align="left">input:read-write</td>
+<td align="left">选择不带 “readonly” 属性的 <code>&lt;input&gt;</code> 元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_required.asp">:required</a></td>
+<td align="left">input:required</td>
+<td align="left">选择指定了 “required” 属性的<code>&lt;input&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_root.asp">:root</a></td>
+<td align="left">root</td>
+<td align="left">选择元素的根元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_target.asp">:target</a></td>
+<td align="left">#news:target</td>
+<td align="left">选择当前活动的 #news 元素（单击包含该锚名称的 URL）。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_valid.asp">:valid</a></td>
+<td align="left">input:valid</td>
+<td align="left">选择所有具有有效值的<code>&lt;input&gt;</code>元素。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_visited.asp">:visited</a></td>
+<td align="left">a:visited</td>
+<td align="left">选择所有已访问的链接。</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_pseudo_classes.asp">CSS 伪类 </a></p>
+</blockquote>
+<h6 id="语法：选择器-伪类"><a href="#语法：选择器-伪类" class="headerlink" title="语法：选择器:伪类"></a>语法：选择器:伪类</h6>
       
     </div>
     <footer class="article-footer">

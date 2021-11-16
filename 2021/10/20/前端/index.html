@@ -508,7 +508,7 @@
 </tr>
 </tbody></table>
 <hr>
-<p>html的学习主要就是标签的使用，以上是一些常用标签。其他的标签可以在需要时去文档查找。<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tags/index.asp">HTML 标签参考手册 (w3school.com.cn)</a></p>
+<h4 id="HTML全部元素"><a href="#HTML全部元素" class="headerlink" title="HTML全部元素"></a>HTML全部元素</h4><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tags/index.asp">HTML 标签参考手册 (w3school.com.cn)</a></p>
 <hr>
 <h2 id="css3"><a href="#css3" class="headerlink" title="css3"></a>css3</h2><h4 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h4><hr>
 <p>​    <em><strong>“什么是css？”</strong></em></p>
@@ -677,7 +677,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h5 id="3-属性-attribute-选择器"><a href="#3-属性-attribute-选择器" class="headerlink" title="3.属性(attribute)选择器"></a>3.属性(attribute)选择器</h5><p>​    为带有特定属性或属性值的 HTML 元素设置样式</p>
+<h5 id="3-属性-attribute-选择器"><a href="#3-属性-attribute-选择器" class="headerlink" title="3.属性(attribute)选择器"></a>3.属性(attribute)选择器</h5><p>​    为带有特定属性或属性值的 HTML 元素设置样式（<em>一般属性值都区分大小写</em>（<em>这不是废话吗</em>））</p>
 <table>
 <thead>
 <tr>
@@ -701,25 +701,25 @@
 </tr>
 <tr>
 <td>[attribute~=”value”]</td>
-<td>选取属性值<strong>包含指定词</strong>的元素</td>
+<td>选取<strong>属性值包含指定词</strong>的元素</td>
 <td>[title~=flower]</td>
 <td>选择带有包含 “flower” 一词的 title 属性的所有元素。</td>
 </tr>
 <tr>
 <td>[attribute|=”value”]</td>
-<td>选取指定属性<strong>以指定值开头</strong>的元素；<br><strong>注意</strong>：<strong>值必须是完整</strong>或单独的单词，比如 class=”top” 或者后跟连字符的，比如 class=”top-text”。</td>
+<td>选取指定<strong>属性以指定值开头</strong>的元素；<br><strong>注意</strong>：<strong>值必须是完整</strong>或单独的单词，比如 class=”top” 或者后跟连字符的，比如 class=”top-text”。</td>
 <td>[lang|=en]</td>
 <td>选择带有以 “en” 开头的 lang 属性的所有元素。</td>
 </tr>
 <tr>
 <td>[attribute^=”value”]</td>
-<td>选取指定属性<strong>以指定值开头</strong>的元素<br>值不必是完整的</td>
+<td>选取指定<strong>属性以指定值开头</strong>的元素<br><strong>值不必是完整</strong>的</td>
 <td>a[href^=”https”]</td>
 <td>选择其 href 属性值以 “https” 开头的每个 <code>&lt;a&gt; </code>元素。</td>
 </tr>
 <tr>
 <td>[attribute$=”value”]</td>
-<td>选取指定属性<strong>以指定值结尾</strong>的元素<br>值不必是完整的</td>
+<td>选取指定属性<strong>以指定值结尾</strong>的元素<br><strong>值不必是完整</strong>的</td>
 <td>a[href$=”.pdf”]</td>
 <td>选择其 href 属性值以 “.pdf” 结尾的每个<code>&lt;a&gt;</code>元素。</td>
 </tr>
@@ -741,6 +741,7 @@
 </ul>
 </blockquote>
 <p>​    个人理解，其实就是css给你定义的class，这些class支持动态匹配标签(比如自动包含鼠标悬停的位置的标签；或者某父标签里的第一个子标签)</p>
+<hr>
 <h6 id="所有-CSS-伪类"><a href="#所有-CSS-伪类" class="headerlink" title="所有 CSS 伪类"></a>所有 CSS 伪类</h6><table>
 <thead>
 <tr>
@@ -752,7 +753,7 @@
 <tbody><tr>
 <td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_active.asp">:active</a></td>
 <td align="left">a:active</td>
-<td align="left">选择活动的链接。</td>
+<td align="left">选择活跃的链接。</td>
 </tr>
 <tr>
 <td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_checked.asp">:checked</a></td>
@@ -905,11 +906,54 @@
 <td align="left">选择所有已访问的链接。</td>
 </tr>
 </tbody></table>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_pseudo_classes.asp">CSS 伪类 </a></p>
+<hr>
+<h5 id="5-伪元素选择器"><a href="#5-伪元素选择器" class="headerlink" title="5.伪元素选择器"></a>5.伪元素选择器</h5><h6 id="什么是伪元素？"><a href="#什么是伪元素？" class="headerlink" title="什么是伪元素？"></a>什么是伪元素？</h6><blockquote>
+<p>CSS 伪元素用于设置元素指定部分的样式。</p>
+<p>例如，它可用于：</p>
+<ul>
+<li>设置元素的首字母、首行的样式</li>
+<li>在元素的内容之前或之后插入内容</li>
+</ul>
 </blockquote>
-<h6 id="语法：选择器-伪类"><a href="#语法：选择器-伪类" class="headerlink" title="语法：选择器:伪类"></a>语法：选择器:伪类</h6><hr>
+<p>​    个人理解，就是选中指定元素的某一部分（伪元素也就那几个）。</p>
+<hr>
+<h6 id="所有CSS伪元素"><a href="#所有CSS伪元素" class="headerlink" title="所有CSS伪元素"></a>所有CSS伪元素</h6><table>
+<thead>
+<tr>
+<th align="left">选择器</th>
+<th align="left">例子</th>
+<th align="left">例子描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_after.asp">::after</a></td>
+<td align="left">p::after</td>
+<td align="left">在每个<code>&lt;p&gt;</code>元素之后插入内容。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_before.asp">::before</a></td>
+<td align="left">p::before</td>
+<td align="left">在每个 <code>&lt;p&gt;</code> 元素之前插入内容。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_first-letter.asp">::first-letter</a></td>
+<td align="left">p::first-letter</td>
+<td align="left">选择每个 <code>&lt;p&gt;</code> 元素的首字母。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_first-line.asp">::first-line</a></td>
+<td align="left">p::first-line</td>
+<td align="left">选择每个<code>&lt;p&gt;</code>元素的首行。</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_selection.asp">::selection</a></td>
+<td align="left">p::selection</td>
+<td align="left">选择用户选择的元素部分。</td>
+</tr>
+</tbody></table>
+<hr>
 <div id="bottom"> </div>
+
 
       
     </div>

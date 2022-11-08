@@ -1,6 +1,718 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>markdown语法及hexo博客布署方法</title>
+    <url>/2021/10/12/markdown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h6 id="无摘要"><a href="#无摘要" class="headerlink" title="无摘要"></a>无摘要</h6><span id="more"></span>
+
+<h2 id="1-标题（-后米接一个空格）"><a href="#1-标题（-后米接一个空格）" class="headerlink" title="1.标题（#后米接一个空格）"></a>1.标题（#后米接一个空格）</h2><ul>
+<li><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1></li>
+<li><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></li>
+<li><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3></li>
+<li><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4></li>
+<li><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5></li>
+<li><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
+</ul>
+<hr>
+<h2 id="2-字体格式"><a href="#2-字体格式" class="headerlink" title="2.字体格式"></a>2.字体格式</h2><ul>
+<li>斜体（左右用*括起来） 效果：<em>斜体</em></li>
+<li>加粗（左右用两个*括起来）效果：<strong>加粗</strong></li>
+<li>斜体加粗（左右用三个*括起来）效果：<em><strong>斜体加粗</strong></em></li>
+<li>删除线（左右用两个~括起来）效果：<del>删除线</del></li>
+</ul>
+<hr>
+<h3 id="3-图片"><a href="#3-图片" class="headerlink" title="3.图片"></a>3.图片</h3><ul>
+<li><p>语法：</p>
+<p><code>![alt](图片地址 &#39;&#39;title&#39;&#39;)</code></p>
+</li>
+<li><p>alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
+<p>如果要将笔记发布到网络，图片地址需要提供外链，本地连接不行</p>
+</li>
+<li><p>一篇关于外链图床选择的文章<a href="https://www.jianshu.com/p/ea1eb11db63f">markdown图床 - 简书 (jianshu.com)</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="4-超链接"><a href="#4-超链接" class="headerlink" title="4.超链接"></a>4.超链接</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">超链接名</span>](<span class="link">超链接地址 &quot;超链接title&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+<li><p>title和上面图片的作用一样，可加可不加</p>
+</li>
+</ul>
+<hr>
+<h3 id="5-引用"><a href="#5-引用" class="headerlink" title="5.引用"></a>5.引用</h3><ul>
+<li><p>语法：</p>
+<p><code>&gt;</code></p>
+</li>
+<li><p><code>&gt;</code>可叠加</p>
+</li>
+</ul>
+<hr>
+<h3 id="6-列表"><a href="#6-列表" class="headerlink" title="6.列表"></a>6.列表</h3><ul>
+<li><p>无序列表</p>
+  <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 列表内容</span><br><span class="line"><span class="bullet">+</span> 列表内容</span><br><span class="line"><span class="bullet">*</span> 列表内容</span><br><span class="line"></span><br><span class="line">-+<span class="emphasis">*效果都相同</span></span><br><span class="line"><span class="emphasis">注意：- + *</span> 跟内容之间都要有一个空格</span><br></pre></td></tr></table></figure></li>
+<li><p>有序列表</p>
+<p>数字加点</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 列表内容</span><br><span class="line"><span class="bullet">2.</span> 列表内容</span><br><span class="line"><span class="bullet">3.</span> 列表内容</span><br><span class="line"></span><br><span class="line">注意：序号跟内容之间要有空格</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<p><strong>其余见下方链接(<em>懒得打了</em>)</strong></p>
+<p> <strong><a
+href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></strong> </p>
+<hr>
+<p>markdown front-matter语法：</p>
+<p><a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter | Hexo</a></p>
+<hr>
+<h2 id="hexo博客部署方法"><a href="#hexo博客部署方法" class="headerlink" title="hexo博客部署方法"></a>hexo博客部署方法</h2><p><a href="https://hexo.io/zh-cn/docs/commands">指令 | Hexo</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/08/29/%E3%80%8A%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97%E3%80%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="《乌合之众》"><a href="#《乌合之众》" class="headerlink" title="《乌合之众》"></a>《乌合之众》</h1>]]></content>
+  </entry>
+  <entry>
+    <title>c++_MFC</title>
+    <url>/2022/06/27/c++MFC/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="c-知识复习"><a href="#c-知识复习" class="headerlink" title="c++知识复习"></a>c++知识复习</h3><p>​    22/6/28:</p>
+<ol>
+<li><p>使用类对象的程序都可以直接访问共有部分，但只能通过公有成员函数或友元函数来访问对象的私有成员。p344</p>
+</li>
+<li><p>定义位于类声明中的函数都将自动成为内联函数。p347</p>
+<p>使用inline限定符可以在类声明外定义内联函数。</p>
+</li>
+<li><p>constd1的作用 摘抄自<a href="https://www.cnblogs.com/xtu-wmbilibili/p/13618665.html">c++中const的用法 - wmbilibili - 博客园 </a>)<br> <strong>一.定义常量</strong></p>
+<p>   　const修饰变量，以下两种定义形式在本质上是一样的</p>
+<p>   　　　const TYPE ValueName = value;　</p>
+<p>   　　　TYPE const ValueName = value;</p>
+<p>   　　功能是对变量声明为只读特性，并保护变量值以防被修改。举例说明如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 const int i = 5;    //方式一</span><br><span class="line">2 int const i = 5;    //方式二</span><br><span class="line">3 i = 10;　　　　　　　 //报错   </span><br></pre></td></tr></table></figure>
+
+<p>上面这个例子表明，变量i具有只读特性，不能够被更改；若想对i重新赋值，如i = 10；则是错误的。</p>
+<p>​    <strong>二.修饰指针</strong></p>
+<p>const修饰指针要特别注意，共有三种形式，一种是用来限定指向空间的值不能修改；另一种是限定指针不可更改，还有一种是限定两者都不能更改的。</p>
+<p>1.char* const pContent;表示指针本身是常量不可变</p>
+<p>\2. const char *pContent;表示指针所指向的内容是常量不可变</p>
+<p>3.const char* const pContent; 表示两者都不可变</p>
+<p>例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int i = 5;</span><br><span class="line">   int j = 6;</span><br><span class="line">   int k = 7;</span><br><span class="line">   const int * p1 = &amp;i; //定义1</span><br><span class="line">   int * const p2 =&amp;j; //定义2</span><br><span class="line">   </span><br><span class="line">   *p1 = 20;        //程序报错</span><br><span class="line">   p1   = &amp;k;        //可以通过</span><br><span class="line">   </span><br><span class="line">   p2   = &amp;k;        //程序报错</span><br><span class="line">   *p2  = 80;       //可以通过</span><br></pre></td></tr></table></figure>
+
+<p>在定义1中const限定的是<em>p1，即其指向空间的值不可改变，若改变其指向空间的值如</em>p1=20，则程序会报错；但p1的值是可以改变的，对p1重新赋值如p1=&amp;k是没有任何问题的。</p>
+<p>在定义2中const限定的是指针p2，若改变p2的值如p2=&amp;k，程序将会报错；但<em>p2，即其所指向空间的值可以改变，如</em>p2=80是没有问题的，程序正常执行。</p>
+<p>注意！有一个区分方法：</p>
+<p>沿着*号划一条线：</p>
+<p>如果const位于<em>的左侧，则const就是用来修饰指针所指向的变量，即指针指向为常量；<br>如果const位于</em>的右侧，const就是修饰指针本身，即指针本身是常量。</p>
+<p>​    <strong>三.函数中使用const</strong></p>
+<p>1.修饰函数参数</p>
+<p>a.传递过来的参数在函数内不可以改变</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun1</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> i)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line"><span class="comment">//其它语句</span></span><br><span class="line">   ……</span><br><span class="line">   i++; <span class="comment">//对i的值进行了修改，程序报错</span></span><br><span class="line">   <span class="comment">//其它语句</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>b.参数指针所指内容为常量不可变</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun2</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> *p)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line"><span class="comment">//其它语句</span></span><br><span class="line">   ……</span><br><span class="line">   (*p)++; <span class="comment">//对p指向空间的值进行了修改，程序报错</span></span><br><span class="line">   <span class="comment">//其它语句</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>c.参数指针本身为常量不可变</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun3</span><span class="params">(<span class="keyword">int</span> * <span class="keyword">const</span> p)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line"><span class="comment">//其它语句</span></span><br><span class="line">   ……</span><br><span class="line">   <span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line">   p = &amp;i; <span class="comment">//对p指针的值进行了修改，程序报错</span></span><br><span class="line">   <span class="comment">//其它语句</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>d.参数为引用，为了增加效率同时防止修改。修饰引用参数，引用参数在函数内为常量不可变</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(A a)</span></span>;</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="keyword">const</span> A &amp;a)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>以上两种传值效果一模一样，但第一个函数效率低。函数体内产生A类型的临时对象用于复制参数a，临时对象的构造、复制、析构过程都将消耗时间。而第二个函数提高了效率。用“引用传递”不需要产生临时对象，节省了临时对象的构造、复制、析构过程消耗的时间。但只用引用有可能改变a，所以加上const。</p>
+<p>2.const修饰函数返回值</p>
+<p>const修饰函数返回值其实用的并不是很多，它的含义和const修饰普通变量以及指针的含义基本相同。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">const</span> <span class="keyword">int</span> <span class="title">fun1</span><span class="params">()</span></span>;</span><br><span class="line">   <span class="function"><span class="keyword">const</span> <span class="keyword">int</span> * <span class="title">fun2</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span>* <span class="keyword">const</span> <span class="title">fun3</span><span class="params">()</span></span>;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">int</span> a  = <span class="built_in">fun1</span>() ;<span class="comment">//这个其实无意义，因为参数返回本身就是赋值。</span></span><br><span class="line">   <span class="keyword">const</span> <span class="keyword">int</span> *b = <span class="built_in">fun2</span>(); </span><br><span class="line">                             <span class="comment">//我们可以把fun2()看作成一个变量，即指针内容不可变。</span></span><br><span class="line">   <span class="keyword">int</span> * <span class="keyword">const</span> c = <span class="built_in">fun3</span>(); </span><br><span class="line">                             <span class="comment">//我们可以把fun3()看作成一个变量，即指针本身不可变。</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>​    <strong>四.与类相关const的使用</strong></p>
+<p>1.const修饰成员变量<br>const修饰类的成员函数，表示成员常量，不能被修改，同时它只能在初始化列表中赋值。如下：</p>
+</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span></span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line"> …</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> nValue;         <span class="comment">//成员常量不能被修改</span></span><br><span class="line">    …</span><br><span class="line">    <span class="built_in">A</span>(<span class="keyword">int</span> x): <span class="built_in">nValue</span>(x) &#123; &#125; ; <span class="comment">//只能在初始化列表中赋值</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>   2.const修饰成员函数<br>任何不会修改数据成员的函数都应用const修饰，这样，当不小心修改了数据成员或调用了非const成员函数时，编译器都会报错。const一般写在函数的最后来修饰。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span></span></span><br><span class="line"><span class="class">    &#123;</span> </span><br><span class="line">     …</span><br><span class="line">       <span class="function"><span class="keyword">void</span> <span class="title">function</span><span class="params">()</span><span class="keyword">const</span></span>; <span class="comment">//常成员函数, 它不改变对象的成员变量.                        </span></span><br><span class="line">                                   </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>   对于const类对象/指针/引用，只能调用类的const成员函数，因此，const修饰成员函数的最重要作用就是限制对于const对象的使用。</p>
+<p>   a. const成员函数不被允许修改它所在对象的任何一个数据成员。</p>
+<p>   b. const成员函数能够访问对象的const成员，而其他成员函数不可以。</p>
+<p>   3.const修饰类对象/对象指针/对象引用</p>
+<p>   const修饰类对象表示该对象为常量对象，其中的任何成员都不能被修改。对于对象指针和对象引用也是一样。</p>
+<p>   const修饰的对象，只能调用const成员函数，该对象的任何非const成员函数都不能被调用，因为任何非const成员函数会有修改成员变量的企图。</p>
+   <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AAA</span></span></span><br><span class="line"><span class="class">   &#123;</span> </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">func1</span><span class="params">()</span></span>; </span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">func2</span><span class="params">()</span> <span class="keyword">const</span></span>; </span><br><span class="line">&#125; </span><br><span class="line">   <span class="keyword">const</span> AAA aObj; </span><br><span class="line">   aObj.<span class="built_in">func1</span>(); <span class="comment">//错误</span></span><br><span class="line">   aObj.<span class="built_in">func2</span>(); <span class="comment">//正确</span></span><br><span class="line">   </span><br><span class="line">   <span class="keyword">const</span> AAA* aObj = <span class="keyword">new</span> <span class="built_in">AAA</span>(); </span><br><span class="line">   aObj-&gt; <span class="built_in">func1</span>(); <span class="comment">//错误</span></span><br><span class="line">   aObj-&gt; <span class="built_in">func2</span>(); <span class="comment">//正确</span></span><br><span class="line">   </span><br></pre></td></tr></table></figure>
+<p>   注：不是所有函数都能声明为const函数，例如构造函数和静态成员函数</p>
+<p>   对于构造函数：const修饰函数表示该函数的返回值是const类型的，改返回值只能赋值给同类型的const变量。 </p>
+<p>const是可以修饰类的成员函数，但是该函数不能修改数据成员。构造函数也属于类的成员函数，但是构造函数是要修改类的成员变量，所以类的构造函数不能申明成const类型的。</p>
+<p>对于静态成员函数：static静态成员是属于类的，而不属于某个具体的对象，所有的对象共用static成员。this指针是某个具体对象的地址，因此static成员函数没有this指针。而函数中的const其实就是用来修饰this指针的，意味this指向的内容不可变，所以const不能用来修饰static成员函数。</p>
+<p>4.</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> :</span> <span class="keyword">public</span> B</span><br></pre></td></tr></table></figure>
+<p> 说明A是B的派生类，B是A的公有基类</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>数据结构与算法(c++描述)</title>
+    <url>/2021/11/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95(c++%E6%8F%8F%E8%BF%B0)/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<span id="more"></span>
+
+<hr>
+<h3 id="第六章-线性表—链式描述"><a href="#第六章-线性表—链式描述" class="headerlink" title="第六章 线性表—链式描述"></a>第六章 线性表—链式描述</h3><h5 id="6-54-并查集"><a href="#6-54-并查集" class="headerlink" title="6.54 并查集"></a>6.54 并查集</h5><p>​    </p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>计网其他章节的零散记录</title>
+    <url>/2021/10/22/%E8%AE%A1%E7%BD%91%E5%85%B6%E4%BB%96%E7%AB%A0%E8%8A%82%E7%9A%84%E9%9B%B6%E6%95%A3%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="代理发现"><a href="#代理发现" class="headerlink" title="代理发现"></a>代理发现</h3><span id="more"></span>
+
+<p>指让移动节点知道自己当前所在网络（归属网络或外部网络）的代理（归属代理或外部代理）身份</p>
+<p>代理发现的两种方法：代理通告or代理请求</p>
+<p>代理通告是代理周期性地在所有链路上广播一个类型字段为9（路由器发现）的<strong>扩展</strong>ICMP报文。报文内有代理的IP地址以及</p>
+<h4 id="7-4-2-3G蜂窝数据网：将因特网扩展到蜂窝用户"><a href="#7-4-2-3G蜂窝数据网：将因特网扩展到蜂窝用户" class="headerlink" title="7.4.2 3G蜂窝数据网：将因特网扩展到蜂窝用户"></a>7.4.2 3G蜂窝数据网：将因特网扩展到蜂窝用户</h4><h5 id="1-3G核心网"><a href="#1-3G核心网" class="headerlink" title="1.3G核心网"></a>1.3G核心网</h5><p>​        3G核心网将无线电接入网连接到公共因特网。3G利用了部分2G（蜂窝语音网）系统的基础设备（但是3G网中对同意设备可能有不同的术语，例如2G的BSC在3G中称为RNC）。</p>
+<hr>
+<h4 id="8-2-1对称密匙密码体制"><a href="#8-2-1对称密匙密码体制" class="headerlink" title="8.2.1对称密匙密码体制"></a>8.2.1对称密匙密码体制</h4><h5 id="1-块密码"><a href="#1-块密码" class="headerlink" title="1.块密码"></a>1.块密码</h5><p>​    把二进制的明文以k为单位区分为块（设k=2，110010则被分为11、00、10，3个块），每个块分别对应一个映射</p>
+<p>​    密匙就是映射表</p>
+<p>​    映射表有2的k次方个映射关系</p>
+<p>​    函数模拟随机排列（没看懂）</p>
+<h5 id="2密码块链接"><a href="#2密码块链接" class="headerlink" title="2密码块链接"></a>2密码块链接</h5><p>​    如果块密码采用单一的映射关系加密报文，则明文中的相同内容经加密过后也是相同的，这就很容易让攻击者猜出相对于的映射关系（比如报文中的固定格式，攻击者很容易根据重复出现的密文，推断出相应的报文格式明文）</p>
+<p>​    可以通过每个明文块分别与一个随机生成的字符串比特串进行<strong>异或操作</strong>，然后再加密。这样相同的明文输出的密文也不一样。发送方向接收方发送<em>密文+与它进行异或操作的比特串</em>。</p>
+<p>​    上述方法中，发送者要发送<em>密文+比特串</em>，所以比正常发送密文多传输了一倍数据量。<strong>密码块链接</strong>是上一种方法的优化（只需要额外发送一个比特串）：发送方向接受方发送一个比特串，并用这个比特串于第一个明文块进行异或操作，然后用密匙加密，输出密文发送给接收方；接收方接到比特串和密文，用密匙和比特串获得第一块明文；此后，发送方用生成的上一个密文作为比特串；而接收方用从发送方获得的上一个密文作为比特串</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>英语阅读</title>
+    <url>/2022/11/08/%E8%8B%B1%E8%AF%AD%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="英语阅读"><a href="#英语阅读" class="headerlink" title="英语阅读"></a>英语阅读</h3><hr>
+<p>[TOC]</p>
+<hr>
+<h4 id="1-可以找到对应原文的细节题"><a href="#1-可以找到对应原文的细节题" class="headerlink" title="1.可以找到对应原文的细节题"></a>1.可以找到对应原文的细节题</h4><p>内容做题法：</p>
+<ol>
+<li>看题干——了解题目在问什么(有无段落定位)</li>
+<li>求同——看四个选项相同的结构</li>
+<li>求异——看四个选项内最不同的区别</li>
+<li>缩小区间——用关键词在原文找到可能区间</li>
+<li>精确定位——在缩小的区间内找到回答</li>
+<li>排除——排除有精确定位的句子中没出现的内容的选项</li>
+<li>得出唯一的可选答案</li>
+</ol>
+<hr>
+<h4 id="2-选择题的bug"><a href="#2-选择题的bug" class="headerlink" title="2.选择题的bug"></a>2.选择题的bug</h4><ol>
+<li><p>题目的暗示：</p>
+<ol>
+<li><p><strong>读九项</strong>：</p>
+<ol>
+<li>若最后一问是问文章主旨，则读5个题干+最后一题的4个选项</li>
+<li>若最后一问非问主旨，则只读5个题干</li>
+<li>读九项目的：寻找可以直接获得的确定信息，如重复词汇，以及题目提供的信息，并可得知文章在讲什么</li>
+</ol>
+</li>
+<li><p><strong>补充题干给出信息的前提</strong></p>
+<p>​    如题目中说“xx可以做一件事情”，则可以获得信息——xx有能力做那件事情</p>
+</li>
+<li><p><strong>二分法</strong></p>
+<ol>
+<li>时间对立(过去普遍=现在不普遍)</li>
+<li>地点对立(南方普遍=北方不普遍)</li>
+<li>比例对立(大多数人认为=少数人不这么认为)(一些人认为=作者不这样认为or批评家认为=作者不这么认为)</li>
+</ol>
+</li>
+<li><p>题目之间可能存在联系，可以以题做题</p>
+</li>
+</ol>
+</li>
+<li><p>选项的暗示</p>
+<ol>
+<li>选项相关<ol>
+<li>意思一致：看哪个范围更广，如果选A则B也对，则A必错，大概率选B</li>
+<li>意思相反：则答案大概率在这两个相反意思的选项中选得</li>
+</ol>
+</li>
+<li>选项无关<ol>
+<li>选项由具体内容选项+无具体内容选项组成</li>
+<li>四个选项全是具体内容</li>
+<li>无具体内容的选项出错概率小</li>
+</ol>
+</li>
+<li>出错概率小的选项特征<ol>
+<li>虚的选项(……的关系、……的影响、……的作用)</li>
+<li>约等于全集的话(否定+肯定，如：不是所有人都能干……)</li>
+<li>选项都说的(一般为文章主旨)</li>
+<li>大道理的话</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h4 id="3-题目类型"><a href="#3-题目类型" class="headerlink" title="3.题目类型"></a>3.题目类型</h4><p>题目可以分为：</p>
+<ul>
+<li>普通细节题(用内容做题法)</li>
+<li>特殊细节题(例子题、推断题、态度题、词汇题、句子题)</li>
+<li>主旨题</li>
+</ul>
+<h5 id="1-例子题"><a href="#1-例子题" class="headerlink" title="1.例子题"></a>1.<strong>例子题</strong></h5><ul>
+<li>题目特征<ul>
+<li>xxx is used to show……</li>
+<li>xxx is quoted to do……</li>
+<li>By citing xxx, author intends to do……</li>
+<li>xxx is mentioned to do……</li>
+</ul>
+</li>
+<li><strong>开篇例</strong><ol>
+<li>找例子结束后那句话or半段or一整段；</li>
+<li>找不道就是全文主旨</li>
+</ol>
+</li>
+<li><strong>段中例</strong><ol>
+<li>找例子前面一句话或半句话和段落第一句(or下面三种情况看第二句)</li>
+<li>段落第一句一般为主旨句，除了以下三种情况，第二句才是主旨句<ol>
+<li>第一句是问句</li>
+<li>第一句作用是承上启下</li>
+<li>第二句开头有个But等转折词</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>整段例</strong><ol>
+<li>例子所在段落的最后一句或文章主旨</li>
+</ol>
+</li>
+</ul>
+<h5 id="2-推断题"><a href="#2-推断题" class="headerlink" title="2.推断题"></a>2.推断题</h5><ul>
+<li><p>题目特征：infer、imply、learn、suggest、wich is true……</p>
+</li>
+<li><p><strong>在推断题中，选项有may，一般是正确选项</strong></p>
+</li>
+<li><p><strong>推细节</strong></p>
+<ol>
+<li>找细节所在本句</li>
+<li>防并列(若有并列句，一般重点都在并列句)</li>
+</ol>
+</li>
+<li><p><strong>推句子</strong></p>
+<ol>
+<li>内容做题法</li>
+</ol>
+</li>
+<li><p><strong>推段落</strong></p>
+<ul>
+<li>推一段</li>
+</ul>
+<ol>
+<li>段落最后一句(是否包含否定词，转折词)</li>
+<li>段中大写转折句(大写But，However等，强调句与句的对立)</li>
+<li>段落第一句</li>
+</ol>
+<ul>
+<li>推多段</li>
+</ul>
+<ol>
+<li>看每段第一句</li>
+<li>or根据原文主旨做题</li>
+<li>or选项反向定位</li>
+</ol>
+<ul>
+<li>推全文(问法如：which of the following is true?)</li>
+</ul>
+<ol>
+<li>在第1-4题出题：其实是推段落(根据上下文确定段落位置，可能推一段，可能推多段)</li>
+<li>在第5题出：推最后一段或问文章主旨(可以观察，如果第四问已经推过最后一段了，则这题就是推文章主旨)</li>
+</ol>
+</li>
+</ul>
+<h5 id="3-态度题"><a href="#3-态度题" class="headerlink" title="3.态度题"></a>3.态度题</h5><ul>
+<li>题目特征：according to xxx, one’s opinion , hold that (v.+that)——hold, state, note, <pre><code>              assume , maintain, suspect, attitude,feel ,agree, the author v.
+</code></pre>
+</li>
+<li>文中人物态度题</li>
+</ul>
+<ol>
+<li>找(人+说法)，防并列</li>
+<li>找(人+说法+细节)，防并列</li>
+</ol>
+<ul>
+<li>作者态度题</li>
+</ul>
+<ol>
+<li><p>与上面相同</p>
+</li>
+<li><p>根据主旨：判断作者态度正面/中立/反面</p>
+</li>
+<li><table>
+<thead>
+<tr>
+<th>表示作者态度的形容词</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>正面</td>
+<td>positive、optimistic、admiring、favor、support、approval、confident、enthusiastic、tolerance</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>objective、impartial、detached、neutral</td>
+</tr>
+<tr>
+<td>负面</td>
+<td>negative、pessimistic、disappointed、critical、doubtful、suspicious、skeptical、questioning、oppose、scorn、depressed</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>如果作者态度不容易发现且文中两者是对立关系，则作者支持弱者</p>
+</li>
+</ol>
+<h5 id="4-词汇题"><a href="#4-词汇题" class="headerlink" title="4.词汇题"></a>4.词汇题</h5><ul>
+<li><p>题目特征：问某个单词的意思</p>
+</li>
+<li><p>特殊技巧</p>
+<ol>
+<li>本句有重复意思的单词</li>
+<li>与主旨相关</li>
+</ol>
+</li>
+<li><p>逻辑与语义暗示</p>
+<ol>
+<li>本句暗示(句意的完整性：xxx做了xxx事)</li>
+<li>局部暗示(句与句之间的逻辑关系：顺承还是转折)</li>
+<li>选项暗示(A能退出B则不选A)</li>
+</ol>
+</li>
+</ul>
+<h5 id="5-句子题"><a href="#5-句子题" class="headerlink" title="5.句子题"></a>5.句子题</h5><ul>
+<li>题目特征：By saying”xxx(一段话)”,the author implies that___</li>
+</ul>
+<ol>
+<li><p>句子本身是答案</p>
+</li>
+<li><p>若本句看不出答案或有比较关键的单词不认识，看方向一致或方向改变的上下句</p>
+</li>
+<li><p>用主旨解题</p>
+<h5 id="6-主旨题"><a href="#6-主旨题" class="headerlink" title="6.主旨题"></a>6.主旨题</h5></li>
+<li><p>读九项+题目给的信息+选项共性+前后题共性</p>
+</li>
+<li><p>利用已做题目的定位句(注意不是已做题目的选项，而是对应你选择选项的原文，因为原文不可能错，但是选项可能会错)+最后一段主旨</p>
+</li>
+</ol>
+<hr>
+<h4 id="4-注意"><a href="#4-注意" class="headerlink" title="4.注意"></a>4.注意</h4><p>要注意题干中的限定词：ofent sometimes、used to、mainly、most、recently now等</p>
+<ul>
+<li>题目问“常常怎么样”就不要选“有时怎么样”</li>
+<li>问”过去怎么样“就不要选“现在怎么样”</li>
+<li>问“主要原因”就不要选“一般原因”</li>
+</ul>
+<hr>
+<h4 id="5-总结："><a href="#5-总结：" class="headerlink" title="5.总结："></a>5.总结：</h4><ul>
+<li><p>做阅读题，主要就是比选项：</p>
+<p>首先排除一定错误的选项(比如用内容做题法精准定位之后，原文中没有提到的选项)-&gt;如果留下几个排除不掉的选项，看看是否能用二分法、前提法，再不能排除就用句意做题法</p>
+</li>
+<li><p>答案不一定完全对，选答案主要就是选更对的选项(排除更错的选项)</p>
+</li>
+<li><p>标准化做题：</p>
+<ul>
+<li><strong>读九项</strong>-&gt;题目是否有<strong>关联</strong>-&gt;做第一题-&gt;分析<strong>题目类型</strong>-&gt;对选项<strong>求同求异</strong>-&gt;根据题目类型找定位或内容做题法或选项反项定位或主旨做题-&gt;第二题……</li>
+</ul>
+</li>
+<li><p>有一些选项需要通过<strong>原文</strong>的正确内容<strong>取反</strong>得到</p>
+<ul>
+<li>如：原文中提到“people can share only the most flattering photos……(人们可以选择只分享好的一面)”，而正确选项则是“people can withhold their unflattering sides(人们可以保留不好的一面)”</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="6-例外题："><a href="#6-例外题：" class="headerlink" title="6.例外题："></a>6.例外题：</h4><h5 id="1-对比选项法"><a href="#1-对比选项法" class="headerlink" title="1.对比选项法"></a>1.对比选项法</h5><p>失效题：<img src="C:\Users\10497\AppData\Roaming\Typora\typora-user-images\image-20221029110854507.png" alt="image-20221029110854507"></p>
+<p>按照对比选项法，AC应该是一致的，并且选了C则A也对，所以应选A。但是本题答案是C。</p>
+<p>失效原因：虽然AC看似一致，但其实是在讲不同的方面，A是improve，C是add some flavor，不一致的根本原因在于这两个单词在英文表达的意思侧重不同，与翻译为中文之后的意思是有区别的，如：improve在该句中侧重改善他们艰苦生活(侧重点是物质的直接的改善，与C的添点乐子不同)，但翻译为中文改善之后，会误认为AC一致。所以用颉彬彬的这些方法，最保险的还是得回去原文看一下。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>计算机网络第六章 链路层和局域网</title>
+    <url>/2021/10/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E9%93%BE%E8%B7%AF%E5%B1%82%E5%92%8C%E5%B1%80%E5%9F%9F%E7%BD%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- ![(●ˇ∀ˇ●)](https://z3.ax1x.com/2021/10/20/5rP0zD.gif "(●'◡'●)")-->
+
+<span id="more"></span>
+
+<hr>
+
+        <div id="aplayer-xKjUjUyD" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-xKjUjUyD"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "你曾是少年",
+              author: "S.H.E",
+              url: "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbGlwczU4SHNZMDNoaHNlV0hGVl9GYkdjdXdWP2U9ZEt3VG4w.mp3",
+              pic: "https://qiantigers.coding.net/p/pic/d/pic/git/raw/master/2020/10/23/20201023174449.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<h2 id="6-0术语-名词"><a href="#6-0术语-名词" class="headerlink" title="6.0术语(名词)"></a>6.0术语(名词)</h2><ul>
+<li>节点</li>
+<li>链路</li>
+<li>链路帧</li>
+<li>网络适配器/网络接口卡</li>
+<li>媒体访问控制协议(MAC)</li>
+<li>载波侦听(carrier sensing)</li>
+<li>碰撞检测(collision detection)</li>
+<li>二进制指数后退算法</li>
+<li>轮询</li>
+<li>令牌</li>
+<li>ARP分组</li>
+<li>ARP表</li>
+<li>以太网的总线拓扑</li>
+<li>集线器</li>
+<li>交换机</li>
+<li>转发器</li>
+<li>流量工程</li>
+</ul>
+<hr>
+<h2 id="6-1链路层概述"><a href="#6-1链路层概述" class="headerlink" title="6.1链路层概述"></a>6.1链路层概述</h2><h3 id="6-1-1链路层提供的服务"><a href="#6-1-1链路层提供的服务" class="headerlink" title="6.1.1链路层提供的服务"></a>6.1.1链路层提供的服务</h3><ul>
+<li>成帧(framing)</li>
+<li>链路接入[媒体访问控制协议(MAC)]</li>
+<li>可靠交付</li>
+<li>差错检测和纠正</li>
+</ul>
+<h3 id="6-1-2链路层在何处实现"><a href="#6-1-2链路层在何处实现" class="headerlink" title="6.1.2链路层在何处实现"></a>6.1.2链路层在何处实现</h3><hr>
+<h2 id="6-2差错检测和纠正技术"><a href="#6-2差错检测和纠正技术" class="headerlink" title="6.2差错检测和纠正技术"></a>6.2差错检测和纠正技术</h2><h3 id="6-2-1奇偶校验"><a href="#6-2-1奇偶校验" class="headerlink" title="6.2.1奇偶校验"></a>6.2.1奇偶校验</h3><h3 id="6-2-2检验和方法"><a href="#6-2-2检验和方法" class="headerlink" title="6.2.2检验和方法"></a>6.2.2检验和方法</h3><h3 id="6-2-3循环冗余检测-CRC"><a href="#6-2-3循环冗余检测-CRC" class="headerlink" title="6.2.3循环冗余检测(CRC)"></a>6.2.3循环冗余检测(CRC)</h3><hr>
+<h2 id="6-3链路层信道"><a href="#6-3链路层信道" class="headerlink" title="6.3链路层信道"></a>6.3链路层信道</h2><h3 id="6-3-1点对点链路"><a href="#6-3-1点对点链路" class="headerlink" title="6.3.1点对点链路"></a>6.3.1点对点链路</h3><ul>
+<li>点对点协议(ppp)</li>
+<li>高级数据链路控制(HDLC)</li>
+</ul>
+<h3 id="6-3-2广播链路"><a href="#6-3-2广播链路" class="headerlink" title="6.3.2广播链路"></a>6.3.2广播链路</h3><ul>
+<li><p>多路访问协议</p>
+<ul>
+<li><p>信道划分协议</p>
+<ul>
+<li>时分多路复用(TDM)</li>
+<li>频分多路复用(FDM)</li>
+<li>码分多址(CDMA)</li>
+</ul>
+</li>
+<li><p>随机接入协议</p>
+<ul>
+<li>时隙ALOHA</li>
+<li>ALOHA</li>
+<li>载波侦听多路访问(CSMA)</li>
+<li>具有碰撞检测的载波侦听多路访问(CSMA/CD)</li>
+</ul>
+</li>
+<li><p>轮流协议</p>
+<ul>
+<li>轮询式协议</li>
+<li>令牌传递协议</li>
+</ul>
+</li>
+<li><p>DOCSIS(用于电缆因特网接入的链路层协议)</p>
+<ul>
+<li>采用了上面三大类协议(FDM、TDM、随机接入和集中分配时隙都用于一个网络中)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="6-4交换局域网"><a href="#6-4交换局域网" class="headerlink" title="6.4交换局域网"></a>6.4交换局域网</h2><h3 id="链路层寻址和ARP"><a href="#链路层寻址和ARP" class="headerlink" title="链路层寻址和ARP"></a>链路层寻址和ARP</h3><ul>
+<li><p>MAC地址(LAN地址/物理地址)</p>
+<ul>
+<li>MAC广播地址(FF-FF-FF-FF-FF-FF)</li>
+</ul>
+</li>
+<li><p>地址解析协议(ARP)</p>
+<p>地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。</p>
+<ul>
+<li>ARP可以看成跨越链路层和网络层边界两边的协议</li>
+<li>ARP只为在同一子网上的主机和路由器接口解析IP地址</li>
+</ul>
+</li>
+<li><p>发送数据到子网之外</p>
+<ul>
+<li>目的地址应该是通往最终目的路径上的第一跳路由器接口的适配器地址，而不是子网之外目的主机的MAC地址</li>
+</ul>
+</li>
+<li><p>以太网</p>
+<p>以太网是局域网的一种实现方式，是一种计算机局域网技术</p>
+<ul>
+<li><p>以太网帧结构</p>
+<ul>
+<li>数据字段(45~1500字节)</li>
+<li>目的地址(6字节)</li>
+<li>源地址(6字节)</li>
+<li>类型字段(2字节)</li>
+<li>CRC(4字节)</li>
+<li>前同步码(8字节)</li>
+</ul>
+</li>
+<li><p>向网络层提供无连接服务、不可靠服务</p>
+</li>
+<li><p>以太网技术</p>
+</li>
+<li><p>链路层交换机</p>
+<ul>
+<li><p>交换机自身对子网的主机和路由器是透明的</p>
+</li>
+<li><p>交换机转发和过滤(借助于交换机表)</p>
+</li>
+<li><p>自学习</p>
+</li>
+<li><p>链路层交换机的性质</p>
+<ul>
+<li>消除碰撞</li>
+<li>异质的链路</li>
+<li>管理</li>
+</ul>
+</li>
+<li><p>交换机和路由器比较</p>
+<ul>
+<li><p>交换机</p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li><p>即插即用</p>
+</li>
+<li><p>具有相对高的分组过滤和转发速率</p>
+<p>因为交换机必须处理高至第二层的帧，而路由器则是高至第三层的数据报</p>
+</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li><p>交换网络的活跃拓扑限制为一棵生成树</p>
+<p>为了防止广播帧的循环</p>
+</li>
+<li><p>大型交换网络要求在主机和路由器中有大的ARP表，这将生成可观的ARP流量和处理量</p>
+</li>
+<li><p>交换机对于广播风暴不提供任何保护措施</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>路由器</p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li>当网络中存在冗余路径时，分组通常也不会通过路由器循环，因此允许以丰富的拓扑结构构建因特网(因为分组不会被限制在一颗生成树上)</li>
+<li>对第二层的广播风暴提供防火墙保护</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>不是即插即用</li>
+<li>处理速度相对交换机慢</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>虚拟局域网(VLAN)</p>
+<p>支持VLAN的交换机允许经一个单一的物理局域网基础设施定义多个虚拟局域网</p>
+<ul>
+<li><p>互联VLAN交换机的一种方法——VLAN干线连接</p>
+<ul>
+<li>一种扩展的以太网帧格式——802.1Q，用于跨越VLAN干线的帧(通过在标准格式中加进首部4字节VLAN标签)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="6-5链路虚拟化：网络作为链路层"><a href="#6-5链路虚拟化：网络作为链路层" class="headerlink" title="6.5链路虚拟化：网络作为链路层"></a>6.5链路虚拟化：网络作为链路层</h2><h3 id="多协议标签交换网络-MPLS"><a href="#多协议标签交换网络-MPLS" class="headerlink" title="多协议标签交换网络(MPLS)"></a>多协议标签交换网络(MPLS)</h3><p>由MPLS使能的路由器称为标签交换路由器<br>MPLS基于固定长度标签转发IP数据报，而不是目的IP地址</p>
+<ul>
+<li><p>由MPLS使能的路由器处理的链路层帧格式</p>
+</li>
+<li><p>流量工程</p>
+</li>
+<li><p>可以用来实现虚拟网络(VPN)</p>
+</li>
+</ul>
+<hr>
+<h2 id="6-6数据中心网络"><a href="#6-6数据中心网络" class="headerlink" title="6.6数据中心网络"></a>6.6数据中心网络</h2><h3 id="6-6-1名词"><a href="#6-6-1名词" class="headerlink" title="6.6.1名词"></a>6.6.1名词</h3><ul>
+<li>机架顶部交换机</li>
+<li>边界路由器</li>
+<li>刀片</li>
+</ul>
+<h3 id="6-6-2数据中心网络设计"><a href="#6-6-2数据中心网络设计" class="headerlink" title="6.6.2数据中心网络设计"></a>6.6.2数据中心网络设计</h3><ul>
+<li><p>负载均衡</p>
+</li>
+<li><p>等级体系结构</p>
+</li>
+<li><p>数据中信网络的发展趋势</p>
+<ul>
+<li>全连接拓扑</li>
+<li>模块化数据中心</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="6-7回顾Web页面请求的历程"><a href="#6-7回顾Web页面请求的历程" class="headerlink" title="6.7回顾Web页面请求的历程"></a>6.7回顾Web页面请求的历程</h2><h3 id="1-准备：DHCP、UDP、IP和以太网"><a href="#1-准备：DHCP、UDP、IP和以太网" class="headerlink" title="1.准备：DHCP、UDP、IP和以太网"></a>1.准备：DHCP、UDP、IP和以太网</h3><ul>
+<li>DHCP请求报文</li>
+<li>UDP报文</li>
+<li>IP数据报</li>
+<li>以太网帧</li>
+<li>CIDR</li>
+<li>DHCP ACK报文</li>
+<li>IP转发表</li>
+</ul>
+<h3 id="2-仍在准备：DNS和APR"><a href="#2-仍在准备：DNS和APR" class="headerlink" title="2.仍在准备：DNS和APR"></a>2.仍在准备：DNS和APR</h3><ul>
+<li>DNS协议</li>
+<li>DNS查询报文</li>
+<li>APR协议</li>
+<li>APR查询报文</li>
+<li>APR回答</li>
+</ul>
+<h3 id="3-仍在准备：域内路由选择到DNS服务器"><a href="#3-仍在准备：域内路由选择到DNS服务器" class="headerlink" title="3.仍在准备：域内路由选择到DNS服务器"></a>3.仍在准备：域内路由选择到DNS服务器</h3><ul>
+<li>因特网的域间协议BGP</li>
+<li>DNS源记录</li>
+<li>权威DNS服务器</li>
+<li>DNS回答报文</li>
+</ul>
+<h3 id="4-Web客户-服务器交互：TCP和HTTP"><a href="#4-Web客户-服务器交互：TCP和HTTP" class="headerlink" title="4.Web客户-服务器交互：TCP和HTTP"></a>4.Web客户-服务器交互：TCP和HTTP</h3><ul>
+<li><p>TCP套接字</p>
+</li>
+<li><p>HTTP GET报文</p>
+</li>
+<li><p>三次握手</p>
+</li>
+<li><p>TCP SYN报文段</p>
+</li>
+<li><p>BGP协议</p>
+</li>
+<li><p>HTTP响应报文</p>
+</li>
+</ul>
+<hr>
+<h2 id="6-8小结"><a href="#6-8小结" class="headerlink" title="6.8小结"></a>6.8小结</h2><hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>零散知识</title>
+    <url>/2021/11/08/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<span id="more"></span>
+
+<p>1.c++结构体初始化的方式</p>
+<p>2.c++结构体地址等于其首个成员变量的地址</p>
+<p>3.c++类内定义的重载类型转换操作符会自动在类内成员相应赋值时生效(个人理解)如：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Fraction</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="keyword">int</span> num;</span><br><span class="line">	<span class="keyword">int</span> den;</span><br><span class="line">	<span class="built_in">Fraction</span>(<span class="keyword">int</span> n,<span class="keyword">int</span> d):<span class="built_in">num</span>(n),<span class="built_in">den</span>(d)</span><br><span class="line">	&#123;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">operator</span> <span class="title">double</span><span class="params">()</span>           <span class="comment">//double重载</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (<span class="keyword">double</span>)num/den;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="function">Fraction <span class="title">d</span><span class="params">(<span class="number">4</span>, <span class="number">5</span>)</span></span>;</span><br><span class="line">	<span class="keyword">double</span> r=d;                 <span class="comment">//该句将重载double应用于d。等价于double r=(double)d;</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%lf&quot;</span>,r);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果为:<code>0.800000</code></p>
+<hr>
+]]></content>
+  </entry>
+  <entry>
     <title>前端</title>
     <url>/2021/10/20/%E5%89%8D%E7%AB%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
@@ -889,641 +1601,6 @@
 <hr>
 <div id="bottom"> </div>
 
-]]></content>
-  </entry>
-  <entry>
-    <title>markdown语法及hexo博客布署方法</title>
-    <url>/2021/10/12/markdown%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h6 id="无摘要"><a href="#无摘要" class="headerlink" title="无摘要"></a>无摘要</h6><span id="more"></span>
-
-<h2 id="1-标题（-后米接一个空格）"><a href="#1-标题（-后米接一个空格）" class="headerlink" title="1.标题（#后米接一个空格）"></a>1.标题（#后米接一个空格）</h2><ul>
-<li><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1></li>
-<li><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></li>
-<li><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3></li>
-<li><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4></li>
-<li><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5></li>
-<li><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
-</ul>
-<hr>
-<h2 id="2-字体格式"><a href="#2-字体格式" class="headerlink" title="2.字体格式"></a>2.字体格式</h2><ul>
-<li>斜体（左右用*括起来） 效果：<em>斜体</em></li>
-<li>加粗（左右用两个*括起来）效果：<strong>加粗</strong></li>
-<li>斜体加粗（左右用三个*括起来）效果：<em><strong>斜体加粗</strong></em></li>
-<li>删除线（左右用两个~括起来）效果：<del>删除线</del></li>
-</ul>
-<hr>
-<h3 id="3-图片"><a href="#3-图片" class="headerlink" title="3.图片"></a>3.图片</h3><ul>
-<li><p>语法：</p>
-<p><code>![alt](图片地址 &#39;&#39;title&#39;&#39;)</code></p>
-</li>
-<li><p>alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
-<p>如果要将笔记发布到网络，图片地址需要提供外链，本地连接不行</p>
-</li>
-<li><p>一篇关于外链图床选择的文章<a href="https://www.jianshu.com/p/ea1eb11db63f">markdown图床 - 简书 (jianshu.com)</a></p>
-</li>
-</ul>
-<hr>
-<h3 id="4-超链接"><a href="#4-超链接" class="headerlink" title="4.超链接"></a>4.超链接</h3><ul>
-<li><p>语法：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">超链接名</span>](<span class="link">超链接地址 &quot;超链接title&quot;</span>)</span><br></pre></td></tr></table></figure></li>
-<li><p>title和上面图片的作用一样，可加可不加</p>
-</li>
-</ul>
-<hr>
-<h3 id="5-引用"><a href="#5-引用" class="headerlink" title="5.引用"></a>5.引用</h3><ul>
-<li><p>语法：</p>
-<p><code>&gt;</code></p>
-</li>
-<li><p><code>&gt;</code>可叠加</p>
-</li>
-</ul>
-<hr>
-<h3 id="6-列表"><a href="#6-列表" class="headerlink" title="6.列表"></a>6.列表</h3><ul>
-<li><p>无序列表</p>
-  <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 列表内容</span><br><span class="line"><span class="bullet">+</span> 列表内容</span><br><span class="line"><span class="bullet">*</span> 列表内容</span><br><span class="line"></span><br><span class="line">-+<span class="emphasis">*效果都相同</span></span><br><span class="line"><span class="emphasis">注意：- + *</span> 跟内容之间都要有一个空格</span><br></pre></td></tr></table></figure></li>
-<li><p>有序列表</p>
-<p>数字加点</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 列表内容</span><br><span class="line"><span class="bullet">2.</span> 列表内容</span><br><span class="line"><span class="bullet">3.</span> 列表内容</span><br><span class="line"></span><br><span class="line">注意：序号跟内容之间要有空格</span><br></pre></td></tr></table></figure></li>
-</ul>
-<hr>
-<p><strong>其余见下方链接(<em>懒得打了</em>)</strong></p>
-<p> <strong><a
-href="https://www.jianshu.com/p/191d1e21f7ed/" target="_blank">简书</a></strong> </p>
-<hr>
-<p>markdown front-matter语法：</p>
-<p><a href="https://hexo.io/zh-cn/docs/front-matter">Front-matter | Hexo</a></p>
-<hr>
-<h2 id="hexo博客部署方法"><a href="#hexo博客部署方法" class="headerlink" title="hexo博客部署方法"></a>hexo博客部署方法</h2><p><a href="https://hexo.io/zh-cn/docs/commands">指令 | Hexo</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
-    <title>计算机网络第六章 链路层和局域网</title>
-    <url>/2021/10/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E9%93%BE%E8%B7%AF%E5%B1%82%E5%92%8C%E5%B1%80%E5%9F%9F%E7%BD%91/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><!-- ![(●ˇ∀ˇ●)](https://z3.ax1x.com/2021/10/20/5rP0zD.gif "(●'◡'●)")-->
-
-<span id="more"></span>
-
-<hr>
-
-        <div id="aplayer-WArXyDOB" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-WArXyDOB"),
-            narrow: false,
-            autoplay: true,
-            showlrc: false,
-            music: {
-              title: "你曾是少年",
-              author: "S.H.E",
-              url: "https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbGlwczU4SHNZMDNoaHNlV0hGVl9GYkdjdXdWP2U9ZEt3VG4w.mp3",
-              pic: "https://qiantigers.coding.net/p/pic/d/pic/git/raw/master/2020/10/23/20201023174449.jpg",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-
-<h2 id="6-0术语-名词"><a href="#6-0术语-名词" class="headerlink" title="6.0术语(名词)"></a>6.0术语(名词)</h2><ul>
-<li>节点</li>
-<li>链路</li>
-<li>链路帧</li>
-<li>网络适配器/网络接口卡</li>
-<li>媒体访问控制协议(MAC)</li>
-<li>载波侦听(carrier sensing)</li>
-<li>碰撞检测(collision detection)</li>
-<li>二进制指数后退算法</li>
-<li>轮询</li>
-<li>令牌</li>
-<li>ARP分组</li>
-<li>ARP表</li>
-<li>以太网的总线拓扑</li>
-<li>集线器</li>
-<li>交换机</li>
-<li>转发器</li>
-<li>流量工程</li>
-</ul>
-<hr>
-<h2 id="6-1链路层概述"><a href="#6-1链路层概述" class="headerlink" title="6.1链路层概述"></a>6.1链路层概述</h2><h3 id="6-1-1链路层提供的服务"><a href="#6-1-1链路层提供的服务" class="headerlink" title="6.1.1链路层提供的服务"></a>6.1.1链路层提供的服务</h3><ul>
-<li>成帧(framing)</li>
-<li>链路接入[媒体访问控制协议(MAC)]</li>
-<li>可靠交付</li>
-<li>差错检测和纠正</li>
-</ul>
-<h3 id="6-1-2链路层在何处实现"><a href="#6-1-2链路层在何处实现" class="headerlink" title="6.1.2链路层在何处实现"></a>6.1.2链路层在何处实现</h3><hr>
-<h2 id="6-2差错检测和纠正技术"><a href="#6-2差错检测和纠正技术" class="headerlink" title="6.2差错检测和纠正技术"></a>6.2差错检测和纠正技术</h2><h3 id="6-2-1奇偶校验"><a href="#6-2-1奇偶校验" class="headerlink" title="6.2.1奇偶校验"></a>6.2.1奇偶校验</h3><h3 id="6-2-2检验和方法"><a href="#6-2-2检验和方法" class="headerlink" title="6.2.2检验和方法"></a>6.2.2检验和方法</h3><h3 id="6-2-3循环冗余检测-CRC"><a href="#6-2-3循环冗余检测-CRC" class="headerlink" title="6.2.3循环冗余检测(CRC)"></a>6.2.3循环冗余检测(CRC)</h3><hr>
-<h2 id="6-3链路层信道"><a href="#6-3链路层信道" class="headerlink" title="6.3链路层信道"></a>6.3链路层信道</h2><h3 id="6-3-1点对点链路"><a href="#6-3-1点对点链路" class="headerlink" title="6.3.1点对点链路"></a>6.3.1点对点链路</h3><ul>
-<li>点对点协议(ppp)</li>
-<li>高级数据链路控制(HDLC)</li>
-</ul>
-<h3 id="6-3-2广播链路"><a href="#6-3-2广播链路" class="headerlink" title="6.3.2广播链路"></a>6.3.2广播链路</h3><ul>
-<li><p>多路访问协议</p>
-<ul>
-<li><p>信道划分协议</p>
-<ul>
-<li>时分多路复用(TDM)</li>
-<li>频分多路复用(FDM)</li>
-<li>码分多址(CDMA)</li>
-</ul>
-</li>
-<li><p>随机接入协议</p>
-<ul>
-<li>时隙ALOHA</li>
-<li>ALOHA</li>
-<li>载波侦听多路访问(CSMA)</li>
-<li>具有碰撞检测的载波侦听多路访问(CSMA/CD)</li>
-</ul>
-</li>
-<li><p>轮流协议</p>
-<ul>
-<li>轮询式协议</li>
-<li>令牌传递协议</li>
-</ul>
-</li>
-<li><p>DOCSIS(用于电缆因特网接入的链路层协议)</p>
-<ul>
-<li>采用了上面三大类协议(FDM、TDM、随机接入和集中分配时隙都用于一个网络中)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="6-4交换局域网"><a href="#6-4交换局域网" class="headerlink" title="6.4交换局域网"></a>6.4交换局域网</h2><h3 id="链路层寻址和ARP"><a href="#链路层寻址和ARP" class="headerlink" title="链路层寻址和ARP"></a>链路层寻址和ARP</h3><ul>
-<li><p>MAC地址(LAN地址/物理地址)</p>
-<ul>
-<li>MAC广播地址(FF-FF-FF-FF-FF-FF)</li>
-</ul>
-</li>
-<li><p>地址解析协议(ARP)</p>
-<p>地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址；收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。</p>
-<ul>
-<li>ARP可以看成跨越链路层和网络层边界两边的协议</li>
-<li>ARP只为在同一子网上的主机和路由器接口解析IP地址</li>
-</ul>
-</li>
-<li><p>发送数据到子网之外</p>
-<ul>
-<li>目的地址应该是通往最终目的路径上的第一跳路由器接口的适配器地址，而不是子网之外目的主机的MAC地址</li>
-</ul>
-</li>
-<li><p>以太网</p>
-<p>以太网是局域网的一种实现方式，是一种计算机局域网技术</p>
-<ul>
-<li><p>以太网帧结构</p>
-<ul>
-<li>数据字段(45~1500字节)</li>
-<li>目的地址(6字节)</li>
-<li>源地址(6字节)</li>
-<li>类型字段(2字节)</li>
-<li>CRC(4字节)</li>
-<li>前同步码(8字节)</li>
-</ul>
-</li>
-<li><p>向网络层提供无连接服务、不可靠服务</p>
-</li>
-<li><p>以太网技术</p>
-</li>
-<li><p>链路层交换机</p>
-<ul>
-<li><p>交换机自身对子网的主机和路由器是透明的</p>
-</li>
-<li><p>交换机转发和过滤(借助于交换机表)</p>
-</li>
-<li><p>自学习</p>
-</li>
-<li><p>链路层交换机的性质</p>
-<ul>
-<li>消除碰撞</li>
-<li>异质的链路</li>
-<li>管理</li>
-</ul>
-</li>
-<li><p>交换机和路由器比较</p>
-<ul>
-<li><p>交换机</p>
-<ul>
-<li><p>优点</p>
-<ul>
-<li><p>即插即用</p>
-</li>
-<li><p>具有相对高的分组过滤和转发速率</p>
-<p>因为交换机必须处理高至第二层的帧，而路由器则是高至第三层的数据报</p>
-</li>
-</ul>
-</li>
-<li><p>缺点</p>
-<ul>
-<li><p>交换网络的活跃拓扑限制为一棵生成树</p>
-<p>为了防止广播帧的循环</p>
-</li>
-<li><p>大型交换网络要求在主机和路由器中有大的ARP表，这将生成可观的ARP流量和处理量</p>
-</li>
-<li><p>交换机对于广播风暴不提供任何保护措施</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>路由器</p>
-<ul>
-<li><p>优点</p>
-<ul>
-<li>当网络中存在冗余路径时，分组通常也不会通过路由器循环，因此允许以丰富的拓扑结构构建因特网(因为分组不会被限制在一颗生成树上)</li>
-<li>对第二层的广播风暴提供防火墙保护</li>
-</ul>
-</li>
-<li><p>缺点</p>
-<ul>
-<li>不是即插即用</li>
-<li>处理速度相对交换机慢</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>虚拟局域网(VLAN)</p>
-<p>支持VLAN的交换机允许经一个单一的物理局域网基础设施定义多个虚拟局域网</p>
-<ul>
-<li><p>互联VLAN交换机的一种方法——VLAN干线连接</p>
-<ul>
-<li>一种扩展的以太网帧格式——802.1Q，用于跨越VLAN干线的帧(通过在标准格式中加进首部4字节VLAN标签)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="6-5链路虚拟化：网络作为链路层"><a href="#6-5链路虚拟化：网络作为链路层" class="headerlink" title="6.5链路虚拟化：网络作为链路层"></a>6.5链路虚拟化：网络作为链路层</h2><h3 id="多协议标签交换网络-MPLS"><a href="#多协议标签交换网络-MPLS" class="headerlink" title="多协议标签交换网络(MPLS)"></a>多协议标签交换网络(MPLS)</h3><p>由MPLS使能的路由器称为标签交换路由器<br>MPLS基于固定长度标签转发IP数据报，而不是目的IP地址</p>
-<ul>
-<li><p>由MPLS使能的路由器处理的链路层帧格式</p>
-</li>
-<li><p>流量工程</p>
-</li>
-<li><p>可以用来实现虚拟网络(VPN)</p>
-</li>
-</ul>
-<hr>
-<h2 id="6-6数据中心网络"><a href="#6-6数据中心网络" class="headerlink" title="6.6数据中心网络"></a>6.6数据中心网络</h2><h3 id="6-6-1名词"><a href="#6-6-1名词" class="headerlink" title="6.6.1名词"></a>6.6.1名词</h3><ul>
-<li>机架顶部交换机</li>
-<li>边界路由器</li>
-<li>刀片</li>
-</ul>
-<h3 id="6-6-2数据中心网络设计"><a href="#6-6-2数据中心网络设计" class="headerlink" title="6.6.2数据中心网络设计"></a>6.6.2数据中心网络设计</h3><ul>
-<li><p>负载均衡</p>
-</li>
-<li><p>等级体系结构</p>
-</li>
-<li><p>数据中信网络的发展趋势</p>
-<ul>
-<li>全连接拓扑</li>
-<li>模块化数据中心</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="6-7回顾Web页面请求的历程"><a href="#6-7回顾Web页面请求的历程" class="headerlink" title="6.7回顾Web页面请求的历程"></a>6.7回顾Web页面请求的历程</h2><h3 id="1-准备：DHCP、UDP、IP和以太网"><a href="#1-准备：DHCP、UDP、IP和以太网" class="headerlink" title="1.准备：DHCP、UDP、IP和以太网"></a>1.准备：DHCP、UDP、IP和以太网</h3><ul>
-<li>DHCP请求报文</li>
-<li>UDP报文</li>
-<li>IP数据报</li>
-<li>以太网帧</li>
-<li>CIDR</li>
-<li>DHCP ACK报文</li>
-<li>IP转发表</li>
-</ul>
-<h3 id="2-仍在准备：DNS和APR"><a href="#2-仍在准备：DNS和APR" class="headerlink" title="2.仍在准备：DNS和APR"></a>2.仍在准备：DNS和APR</h3><ul>
-<li>DNS协议</li>
-<li>DNS查询报文</li>
-<li>APR协议</li>
-<li>APR查询报文</li>
-<li>APR回答</li>
-</ul>
-<h3 id="3-仍在准备：域内路由选择到DNS服务器"><a href="#3-仍在准备：域内路由选择到DNS服务器" class="headerlink" title="3.仍在准备：域内路由选择到DNS服务器"></a>3.仍在准备：域内路由选择到DNS服务器</h3><ul>
-<li>因特网的域间协议BGP</li>
-<li>DNS源记录</li>
-<li>权威DNS服务器</li>
-<li>DNS回答报文</li>
-</ul>
-<h3 id="4-Web客户-服务器交互：TCP和HTTP"><a href="#4-Web客户-服务器交互：TCP和HTTP" class="headerlink" title="4.Web客户-服务器交互：TCP和HTTP"></a>4.Web客户-服务器交互：TCP和HTTP</h3><ul>
-<li><p>TCP套接字</p>
-</li>
-<li><p>HTTP GET报文</p>
-</li>
-<li><p>三次握手</p>
-</li>
-<li><p>TCP SYN报文段</p>
-</li>
-<li><p>BGP协议</p>
-</li>
-<li><p>HTTP响应报文</p>
-</li>
-</ul>
-<hr>
-<h2 id="6-8小结"><a href="#6-8小结" class="headerlink" title="6.8小结"></a>6.8小结</h2><hr>
-]]></content>
-  </entry>
-  <entry>
-    <title>数据结构与算法(c++描述)</title>
-    <url>/2021/11/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95(c++%E6%8F%8F%E8%BF%B0)/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<span id="more"></span>
-
-<hr>
-<h3 id="第六章-线性表—链式描述"><a href="#第六章-线性表—链式描述" class="headerlink" title="第六章 线性表—链式描述"></a>第六章 线性表—链式描述</h3><h5 id="6-54-并查集"><a href="#6-54-并查集" class="headerlink" title="6.54 并查集"></a>6.54 并查集</h5><p>​    </p>
-<hr>
-]]></content>
-  </entry>
-  <entry>
-    <title>计网其他章节的零散记录</title>
-    <url>/2021/10/22/%E8%AE%A1%E7%BD%91%E5%85%B6%E4%BB%96%E7%AB%A0%E8%8A%82%E7%9A%84%E9%9B%B6%E6%95%A3%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="代理发现"><a href="#代理发现" class="headerlink" title="代理发现"></a>代理发现</h3><span id="more"></span>
-
-<p>指让移动节点知道自己当前所在网络（归属网络或外部网络）的代理（归属代理或外部代理）身份</p>
-<p>代理发现的两种方法：代理通告or代理请求</p>
-<p>代理通告是代理周期性地在所有链路上广播一个类型字段为9（路由器发现）的<strong>扩展</strong>ICMP报文。报文内有代理的IP地址以及</p>
-<h4 id="7-4-2-3G蜂窝数据网：将因特网扩展到蜂窝用户"><a href="#7-4-2-3G蜂窝数据网：将因特网扩展到蜂窝用户" class="headerlink" title="7.4.2 3G蜂窝数据网：将因特网扩展到蜂窝用户"></a>7.4.2 3G蜂窝数据网：将因特网扩展到蜂窝用户</h4><h5 id="1-3G核心网"><a href="#1-3G核心网" class="headerlink" title="1.3G核心网"></a>1.3G核心网</h5><p>​        3G核心网将无线电接入网连接到公共因特网。3G利用了部分2G（蜂窝语音网）系统的基础设备（但是3G网中对同意设备可能有不同的术语，例如2G的BSC在3G中称为RNC）。</p>
-<hr>
-<h4 id="8-2-1对称密匙密码体制"><a href="#8-2-1对称密匙密码体制" class="headerlink" title="8.2.1对称密匙密码体制"></a>8.2.1对称密匙密码体制</h4><h5 id="1-块密码"><a href="#1-块密码" class="headerlink" title="1.块密码"></a>1.块密码</h5><p>​    把二进制的明文以k为单位区分为块（设k=2，110010则被分为11、00、10，3个块），每个块分别对应一个映射</p>
-<p>​    密匙就是映射表</p>
-<p>​    映射表有2的k次方个映射关系</p>
-<p>​    函数模拟随机排列（没看懂）</p>
-<h5 id="2密码块链接"><a href="#2密码块链接" class="headerlink" title="2密码块链接"></a>2密码块链接</h5><p>​    如果块密码采用单一的映射关系加密报文，则明文中的相同内容经加密过后也是相同的，这就很容易让攻击者猜出相对于的映射关系（比如报文中的固定格式，攻击者很容易根据重复出现的密文，推断出相应的报文格式明文）</p>
-<p>​    可以通过每个明文块分别与一个随机生成的字符串比特串进行<strong>异或操作</strong>，然后再加密。这样相同的明文输出的密文也不一样。发送方向接收方发送<em>密文+与它进行异或操作的比特串</em>。</p>
-<p>​    上述方法中，发送者要发送<em>密文+比特串</em>，所以比正常发送密文多传输了一倍数据量。<strong>密码块链接</strong>是上一种方法的优化（只需要额外发送一个比特串）：发送方向接受方发送一个比特串，并用这个比特串于第一个明文块进行异或操作，然后用密匙加密，输出密文发送给接收方；接收方接到比特串和密文，用密匙和比特串获得第一块明文；此后，发送方用生成的上一个密文作为比特串；而接收方用从发送方获得的上一个密文作为比特串</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>零散知识</title>
-    <url>/2021/11/08/%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<span id="more"></span>
-
-<p>1.c++结构体初始化的方式</p>
-<p>2.c++结构体地址等于其首个成员变量的地址</p>
-<p>3.c++类内定义的重载类型转换操作符会自动在类内成员相应赋值时生效(个人理解)如：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Fraction</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="keyword">int</span> num;</span><br><span class="line">	<span class="keyword">int</span> den;</span><br><span class="line">	<span class="built_in">Fraction</span>(<span class="keyword">int</span> n,<span class="keyword">int</span> d):<span class="built_in">num</span>(n),<span class="built_in">den</span>(d)</span><br><span class="line">	&#123;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">operator</span> <span class="title">double</span><span class="params">()</span>           <span class="comment">//double重载</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (<span class="keyword">double</span>)num/den;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="function">Fraction <span class="title">d</span><span class="params">(<span class="number">4</span>, <span class="number">5</span>)</span></span>;</span><br><span class="line">	<span class="keyword">double</span> r=d;                 <span class="comment">//该句将重载double应用于d。等价于double r=(double)d;</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%lf&quot;</span>,r);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>输出结果为:<code>0.800000</code></p>
-<hr>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2022/08/29/%E3%80%8A%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97%E3%80%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="《乌合之众》"><a href="#《乌合之众》" class="headerlink" title="《乌合之众》"></a>《乌合之众》</h1>]]></content>
-  </entry>
-  <entry>
-    <title>英语阅读</title>
-    <url>/2022/11/08/%E8%8B%B1%E8%AF%AD%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="英语阅读"><a href="#英语阅读" class="headerlink" title="英语阅读"></a>英语阅读</h3><hr>
-<h4 id="1-可以找到对应原文的细节题"><a href="#1-可以找到对应原文的细节题" class="headerlink" title="1.可以找到对应原文的细节题"></a>1.可以找到对应原文的细节题</h4><p>内容做题法：</p>
-<ol>
-<li>看题干——了解题目在问什么(有无段落定位)</li>
-<li>求同——看四个选项相同的结构</li>
-<li>求异——看四个选项内最不同的区别</li>
-<li>缩小区间——用关键词在原文找到可能区间</li>
-<li>精确定位——在缩小的区间内找到回答</li>
-<li>排除——排除有精确定位的句子中没出现的内容的选项</li>
-<li>得出唯一的可选答案</li>
-</ol>
-<hr>
-<h4 id="2-选择题的bug"><a href="#2-选择题的bug" class="headerlink" title="2.选择题的bug"></a>2.选择题的bug</h4><ol>
-<li><p>题目的暗示：</p>
-<ol>
-<li><p><strong>读九项</strong>：</p>
-<ol>
-<li>若最后一问是问文章主旨，则读5个题干+最后一题的4个选项</li>
-<li>若最后一问非问主旨，则只读5个题干</li>
-<li>读九项目的：寻找可以直接获得的确定信息，如重复词汇，以及题目提供的信息，并可得知文章在讲什么</li>
-</ol>
-</li>
-<li><p><strong>补充题干给出信息的前提</strong></p>
-<p>​    如题目中说“xx可以做一件事情”，则可以获得信息——xx有能力做那件事情</p>
-</li>
-<li><p><strong>二分法</strong></p>
-<ol>
-<li>时间对立(过去普遍=现在不普遍)</li>
-<li>地点对立(南方普遍=北方不普遍)</li>
-<li>比例对立(大多数人认为=少数人不这么认为)(一些人认为=作者不这样认为or批评家认为=作者不这么认为)</li>
-</ol>
-</li>
-<li><p>题目之间可能存在联系，可以以题做题</p>
-</li>
-</ol>
-</li>
-<li><p>选项的暗示</p>
-<ol>
-<li>选项相关<ol>
-<li>意思一致：看哪个范围更广，如果选A则B也对，则A必错，大概率选B</li>
-<li>意思相反：则答案大概率在这两个相反意思的选项中选得</li>
-</ol>
-</li>
-<li>选项无关<ol>
-<li>选项由具体内容选项+无具体内容选项组成</li>
-<li>四个选项全是具体内容</li>
-<li>无具体内容的选项出错概率小</li>
-</ol>
-</li>
-<li>出错概率小的选项特征<ol>
-<li>虚的选项(……的关系、……的影响、……的作用)</li>
-<li>约等于全集的话(否定+肯定，如：不是所有人都能干……)</li>
-<li>选项都说的(一般为文章主旨)</li>
-<li>大道理的话</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<hr>
-<h4 id="3-题目类型"><a href="#3-题目类型" class="headerlink" title="3.题目类型"></a>3.题目类型</h4><p>题目可以分为：</p>
-<ul>
-<li>普通细节题(用内容做题法)</li>
-<li>特殊细节题(例子题、推断题、态度题、词汇题、句子题)</li>
-<li>主旨题</li>
-</ul>
-<h5 id="1-例子题"><a href="#1-例子题" class="headerlink" title="1.例子题"></a>1.<strong>例子题</strong></h5><ul>
-<li>题目特征<ul>
-<li>xxx is used to show……</li>
-<li>xxx is quoted to do……</li>
-<li>By citing xxx, author intends to do……</li>
-<li>xxx is mentioned to do……</li>
-</ul>
-</li>
-<li><strong>开篇例</strong><ol>
-<li>找例子结束后那句话or半段or一整段；</li>
-<li>找不道就是全文主旨</li>
-</ol>
-</li>
-<li><strong>段中例</strong><ol>
-<li>找例子前面一句话或半句话和段落第一句(or下面三种情况看第二句)</li>
-<li>段落第一句一般为主旨句，除了以下三种情况，第二句才是主旨句<ol>
-<li>第一句是问句</li>
-<li>第一句作用是承上启下</li>
-<li>第二句开头有个But等转折词</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><strong>整段例</strong><ol>
-<li>例子所在段落的最后一句或文章主旨</li>
-</ol>
-</li>
-</ul>
-<h5 id="2-推断题"><a href="#2-推断题" class="headerlink" title="2.推断题"></a>2.推断题</h5><ul>
-<li><p>题目特征：infer、imply、learn、suggest、wich is true……</p>
-</li>
-<li><p><strong>在推断题中，选项有may，一般是正确选项</strong></p>
-</li>
-<li><p><strong>推细节</strong></p>
-<ol>
-<li>找细节所在本句</li>
-<li>防并列(若有并列句，一般重点都在并列句)</li>
-</ol>
-</li>
-<li><p><strong>推句子</strong></p>
-<ol>
-<li>内容做题法</li>
-</ol>
-</li>
-<li><p><strong>推段落</strong></p>
-<ul>
-<li>推一段</li>
-</ul>
-<ol>
-<li>段落最后一句(是否包含否定词，转折词)</li>
-<li>段中大写转折句(大写But，However等，强调句与句的对立)</li>
-<li>段落第一句</li>
-</ol>
-<ul>
-<li>推多段</li>
-</ul>
-<ol>
-<li>看每段第一句</li>
-<li>or根据原文主旨做题</li>
-<li>or选项反向定位</li>
-</ol>
-<ul>
-<li>推全文(问法如：which of the following is true?)</li>
-</ul>
-<ol>
-<li>在第1-4题出题：其实是推段落(根据上下文确定段落位置，可能推一段，可能推多段)</li>
-<li>在第5题出：推最后一段或问文章主旨(可以观察，如果第四问已经推过最后一段了，则这题就是推文章主旨)</li>
-</ol>
-</li>
-</ul>
-<h5 id="3-态度题"><a href="#3-态度题" class="headerlink" title="3.态度题"></a>3.态度题</h5><ul>
-<li>题目特征：according to xxx, one’s opinion , hold that (v.+that)——hold, state, note, <pre><code>              assume , maintain, suspect, attitude,feel ,agree, the author v.
-</code></pre>
-</li>
-<li>文中人物态度题</li>
-</ul>
-<ol>
-<li>找(人+说法)，防并列</li>
-<li>找(人+说法+细节)，防并列</li>
-</ol>
-<ul>
-<li>作者态度题</li>
-</ul>
-<ol>
-<li><p>与上面相同</p>
-</li>
-<li><p>根据主旨：判断作者态度正面/中立/反面</p>
-</li>
-<li><table>
-<thead>
-<tr>
-<th>表示作者态度的形容词</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>正面</td>
-<td>positive、optimistic、admiring、favor、support、approval、confident、enthusiastic、tolerance</td>
-</tr>
-<tr>
-<td>中性</td>
-<td>objective、impartial、detached、neutral</td>
-</tr>
-<tr>
-<td>负面</td>
-<td>negative、pessimistic、disappointed、critical、doubtful、suspicious、skeptical、questioning、oppose、scorn、depressed</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>如果作者态度不容易发现且文中两者是对立关系，则作者支持弱者</p>
-</li>
-</ol>
-<h5 id="4-词汇题"><a href="#4-词汇题" class="headerlink" title="4.词汇题"></a>4.词汇题</h5><ul>
-<li><p>题目特征：问某个单词的意思</p>
-</li>
-<li><p>特殊技巧</p>
-<ol>
-<li>本句有重复意思的单词</li>
-<li>与主旨相关</li>
-</ol>
-</li>
-<li><p>逻辑与语义暗示</p>
-<ol>
-<li>本句暗示(句意的完整性：xxx做了xxx事)</li>
-<li>局部暗示(句与句之间的逻辑关系：顺承还是转折)</li>
-<li>选项暗示(A能退出B则不选A)</li>
-</ol>
-</li>
-</ul>
-<h5 id="5-句子题"><a href="#5-句子题" class="headerlink" title="5.句子题"></a>5.句子题</h5><ul>
-<li>题目特征：By saying”xxx(一段话)”,the author implies that___</li>
-</ul>
-<ol>
-<li><p>句子本身是答案</p>
-</li>
-<li><p>若本句看不出答案或有比较关键的单词不认识，看方向一致或方向改变的上下句</p>
-</li>
-<li><p>用主旨解题</p>
-<h5 id="6-主旨题"><a href="#6-主旨题" class="headerlink" title="6.主旨题"></a>6.主旨题</h5></li>
-<li><p>读九项+题目给的信息+选项共性+前后题共性</p>
-</li>
-<li><p>利用已做题目的定位句(注意不是已做题目的选项，而是对应你选择选项的原文，因为原文不可能错，但是选项可能会错)+最后一段主旨</p>
-</li>
-</ol>
-<hr>
-<h4 id="4-注意"><a href="#4-注意" class="headerlink" title="4.注意"></a>4.注意</h4><p>要注意题干中的限定词：ofent sometimes、used to、mainly、most、recently now等</p>
-<ul>
-<li>题目问“常常怎么样”就不要选“有时怎么样”</li>
-<li>问”过去怎么样“就不要选“现在怎么样”</li>
-<li>问“主要原因”就不要选“一般原因”</li>
-</ul>
-<hr>
-<h4 id="5-总结："><a href="#5-总结：" class="headerlink" title="5.总结："></a>5.总结：</h4><ul>
-<li><p>做阅读题，主要就是比选项：</p>
-<p>首先排除一定错误的选项(比如用内容做题法精准定位之后，原文中没有提到的选项)-&gt;如果留下几个排除不掉的选项，看看是否能用二分法、前提法，再不能排除就用句意做题法</p>
-</li>
-<li><p>答案不一定完全对，选答案主要就是选更对的选项(排除更错的选项)</p>
-</li>
-<li><p>标准化做题：</p>
-<ul>
-<li><strong>读九项</strong>-&gt;题目是否有<strong>关联</strong>-&gt;做第一题-&gt;分析<strong>题目类型</strong>-&gt;对选项<strong>求同求异</strong>-&gt;根据题目类型找定位或内容做题法或选项反项定位或主旨做题-&gt;第二题……</li>
-</ul>
-</li>
-<li><p>有一些选项需要通过<strong>原文</strong>的正确内容<strong>取反</strong>得到</p>
-<ul>
-<li>如：原文中提到“people can share only the most flattering photos……(人们可以选择只分享好的一面)”，而正确选项则是“people can withhold their unflattering sides(人们可以保留不好的一面)”</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="6-例外题："><a href="#6-例外题：" class="headerlink" title="6.例外题："></a>6.例外题：</h4><h5 id="1-对比选项法"><a href="#1-对比选项法" class="headerlink" title="1.对比选项法"></a>1.对比选项法</h5><p>失效题：<img src="C:\Users\10497\AppData\Roaming\Typora\typora-user-images\image-20221029110854507.png" alt="image-20221029110854507"></p>
-<p>按照对比选项法，AC应该是一致的，并且选了C则A也对，所以应选A。但是本题答案是C。</p>
-<p>失效原因：虽然AC看似一致，但其实是在讲不同的方面，A是improve，C是add some flavor，不一致的根本原因在于这两个单词在英文表达的意思侧重不同，与翻译为中文之后的意思是有区别的，如：improve在该句中侧重改善他们艰苦生活(侧重点是物质的直接的改善，与C的添点乐子不同)，但翻译为中文改善之后，会误认为AC一致。所以用颉彬彬的这些方法，最保险的还是得回去原文看一下。</p>
 ]]></content>
   </entry>
 </search>

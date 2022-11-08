@@ -68,7 +68,9 @@
       
       
       
-      <h3 id="c-知识复习"><a href="#c-知识复习" class="headerlink" title="c++知识复习"></a>c++知识复习</h3><p>​    22/6/28:</p>
+      <span id="more"></span>
+
+<h3 id="c-知识复习"><a href="#c-知识复习" class="headerlink" title="c++知识复习"></a>c++知识复习</h3><p>​    22/6/28:</p>
 <ol>
 <li><p>使用类对象的程序都可以直接访问共有部分，但只能通过公有成员函数或友元函数来访问对象的私有成员。p344</p>
 </li>
@@ -109,11 +111,7 @@
 
 <p>d.参数为引用，为了增加效率同时防止修改。修饰引用参数，引用参数在函数内为常量不可变</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(A a)</span></span>;</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="keyword">const</span> A &amp;a)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<p>以上两种传值效果一模一样，但第一个函数效率低。函数体内产生A类型的临时对象用于复制参数a，临时对象的构造、复制、析构过程都将消耗时间。而第二个函数提高了效率。用“引用传递”不需要产生临时对象，节省了临时对象的构造、复制、析构过程消耗的时间。但只用引用有可能改变a，所以加上const。</p>
-<p>2.const修饰函数返回值</p>
-<p>const修饰函数返回值其实用的并不是很多，它的含义和const修饰普通变量以及指针的含义基本相同。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">const</span> <span class="keyword">int</span> <span class="title">fun1</span><span class="params">()</span></span>;</span><br><span class="line">   <span class="function"><span class="keyword">const</span> <span class="keyword">int</span> * <span class="title">fun2</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span>* <span class="keyword">const</span> <span class="title">fun3</span><span class="params">()</span></span>;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">int</span> a  = <span class="built_in">fun1</span>() ;<span class="comment">//这个其实无意义，因为参数返回本身就是赋值。</span></span><br><span class="line">   <span class="keyword">const</span> <span class="keyword">int</span> *b = <span class="built_in">fun2</span>(); </span><br><span class="line">                             <span class="comment">//我们可以把fun2()看作成一个变量，即指针内容不可变。</span></span><br><span class="line">   <span class="keyword">int</span> * <span class="keyword">const</span> c = <span class="built_in">fun3</span>(); </span><br><span class="line">                             <span class="comment">//我们可以把fun3()看作成一个变量，即指针本身不可变。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line">   以上两种传值效果一模一样，但第一个函数效率低。函数体内产生A类型的临时对象用于复制参数a，临时对象的构造、复制、析构过程都将消耗时间。而第二个函数提高了效率。用“引用传递”不需要产生临时对象，节省了临时对象的构造、复制、析构过程消耗的时间。但只用引用有可能改变a，所以加上const。</span><br><span class="line">   </span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">   2.const修饰函数返回值</span><br><span class="line"></span><br><span class="line">   const修饰函数返回值其实用的并不是很多，它的含义和const修饰普通变量以及指针的含义基本相同。</span><br><span class="line"></span><br><span class="line">   ```c++</span><br><span class="line">const int fun1();</span><br><span class="line">   const int * fun2();</span><br><span class="line">int* const fun3();</span><br><span class="line">   </span><br><span class="line">   int a  = fun1() ;//这个其实无意义，因为参数返回本身就是赋值。</span><br><span class="line">   const int *b = fun2(); </span><br><span class="line">                             //我们可以把fun2()看作成一个变量，即指针内容不可变。</span><br><span class="line">   int * const c = fun3(); </span><br><span class="line">                             //我们可以把fun3()看作成一个变量，即指针本身不可变。</span><br></pre></td></tr></table></figure>
 
 
 
@@ -122,21 +120,28 @@
 </li>
 </ol>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span></span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line"> …</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> nValue;         <span class="comment">//成员常量不能被修改</span></span><br><span class="line">    …</span><br><span class="line">    <span class="built_in">A</span>(<span class="keyword">int</span> x): <span class="built_in">nValue</span>(x) &#123; &#125; ; <span class="comment">//只能在初始化列表中赋值</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    </p>
 <p>   2.const修饰成员函数<br>任何不会修改数据成员的函数都应用const修饰，这样，当不小心修改了数据成员或调用了非const成员函数时，编译器都会报错。const一般写在函数的最后来修饰。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span></span></span><br><span class="line"><span class="class">    &#123;</span> </span><br><span class="line">     …</span><br><span class="line">       <span class="function"><span class="keyword">void</span> <span class="title">function</span><span class="params">()</span><span class="keyword">const</span></span>; <span class="comment">//常成员函数, 它不改变对象的成员变量.                        </span></span><br><span class="line">                                   </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
 <p>   对于const类对象/指针/引用，只能调用类的const成员函数，因此，const修饰成员函数的最重要作用就是限制对于const对象的使用。</p>
 <p>   a. const成员函数不被允许修改它所在对象的任何一个数据成员。</p>
 <p>   b. const成员函数能够访问对象的const成员，而其他成员函数不可以。</p>
+<p>​    </p>
 <p>   3.const修饰类对象/对象指针/对象引用</p>
 <p>   const修饰类对象表示该对象为常量对象，其中的任何成员都不能被修改。对于对象指针和对象引用也是一样。</p>
 <p>   const修饰的对象，只能调用const成员函数，该对象的任何非const成员函数都不能被调用，因为任何非const成员函数会有修改成员变量的企图。</p>
+<p>​    </p>
    <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AAA</span></span></span><br><span class="line"><span class="class">   &#123;</span> </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">func1</span><span class="params">()</span></span>; </span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">func2</span><span class="params">()</span> <span class="keyword">const</span></span>; </span><br><span class="line">&#125; </span><br><span class="line">   <span class="keyword">const</span> AAA aObj; </span><br><span class="line">   aObj.<span class="built_in">func1</span>(); <span class="comment">//错误</span></span><br><span class="line">   aObj.<span class="built_in">func2</span>(); <span class="comment">//正确</span></span><br><span class="line">   </span><br><span class="line">   <span class="keyword">const</span> AAA* aObj = <span class="keyword">new</span> <span class="built_in">AAA</span>(); </span><br><span class="line">   aObj-&gt; <span class="built_in">func1</span>(); <span class="comment">//错误</span></span><br><span class="line">   aObj-&gt; <span class="built_in">func2</span>(); <span class="comment">//正确</span></span><br><span class="line">   </span><br></pre></td></tr></table></figure>
+
 <p>   注：不是所有函数都能声明为const函数，例如构造函数和静态成员函数</p>
 <p>   对于构造函数：const修饰函数表示该函数的返回值是const类型的，改返回值只能赋值给同类型的const变量。 </p>
 <p>const是可以修饰类的成员函数，但是该函数不能修改数据成员。构造函数也属于类的成员函数，但是构造函数是要修改类的成员变量，所以类的构造函数不能申明成const类型的。</p>
 <p>对于静态成员函数：static静态成员是属于类的，而不属于某个具体的对象，所有的对象共用static成员。this指针是某个具体对象的地址，因此static成员函数没有this指针。而函数中的const其实就是用来修饰this指针的，意味this指向的内容不可变，所以const不能用来修饰static成员函数。</p>
 <p>4.</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> :</span> <span class="keyword">public</span> B</span><br></pre></td></tr></table></figure>
+
 <p> 说明A是B的派生类，B是A的公有基类</p>
 
       
